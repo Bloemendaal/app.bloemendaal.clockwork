@@ -1,0 +1,117 @@
+{
+	"id": "event_happened_between",
+	"title": {
+		"en": "Event happened between times ago",
+		"nl": "Gebeurtenis vond tussen tijden geleden plaats"
+	},
+	"titleFormatted": {
+		"en": "[[event_id]] happened between [[min_time]] and [[max_time]] [[unit]] ago (default: [[default_value]])",
+		"nl": "[[event_id]] vond tussen [[min_time]] en [[max_time]] [[unit]] geleden plaats (standaard: [[default_value]])"
+	},
+	"hint": {
+		"en": "Check if an event happened within a time window (between min and max). Returns the default value if the event never happened.",
+		"nl": "Controleer of een gebeurtenis binnen een tijdsperiode plaatsvond (tussen min en max). Geeft de standaardwaarde terug als de gebeurtenis nooit plaatsvond."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam"
+			}
+		},
+		{
+			"type": "number",
+			"name": "min_time",
+			"title": {
+				"en": "Minimum time",
+				"nl": "Minimum tijd"
+			},
+			"placeholder": {
+				"en": "5",
+				"nl": "5"
+			},
+			"min": 0
+		},
+		{
+			"type": "number",
+			"name": "max_time",
+			"title": {
+				"en": "Maximum time",
+				"nl": "Maximum tijd"
+			},
+			"placeholder": {
+				"en": "15",
+				"nl": "15"
+			},
+			"min": 0
+		},
+		{
+			"type": "dropdown",
+			"name": "unit",
+			"title": {
+				"en": "Time unit",
+				"nl": "Tijdseenheid"
+			},
+			"values": [
+				{
+					"id": "seconds",
+					"title": {
+						"en": "seconds",
+						"nl": "seconden"
+					}
+				},
+				{
+					"id": "minutes",
+					"title": {
+						"en": "minutes",
+						"nl": "minuten"
+					}
+				},
+				{
+					"id": "hours",
+					"title": {
+						"en": "hours",
+						"nl": "uren"
+					}
+				},
+				{
+					"id": "days",
+					"title": {
+						"en": "days",
+						"nl": "dagen"
+					}
+				}
+			]
+		},
+		{
+			"type": "dropdown",
+			"name": "default_value",
+			"title": {
+				"en": "Default if event never happened",
+				"nl": "Standaard als gebeurtenis nooit plaatsvond"
+			},
+			"values": [
+				{
+					"id": "true",
+					"title": {
+						"en": "True",
+						"nl": "Waar"
+					}
+				},
+				{
+					"id": "false",
+					"title": {
+						"en": "False",
+						"nl": "Onwaar"
+					}
+				}
+			]
+		}
+	]
+}

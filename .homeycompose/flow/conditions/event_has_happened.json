@@ -1,0 +1,29 @@
+{
+	"id": "event_has_happened",
+	"title": {
+		"en": "Event has happened",
+		"nl": "Gebeurtenis heeft plaatsgevonden"
+	},
+	"titleFormatted": {
+		"en": "[[event_id]] has happened at least once",
+		"nl": "[[event_id]] heeft minstens één keer plaatsgevonden"
+	},
+	"hint": {
+		"en": "Check if an event has been recorded at any time in the past.",
+		"nl": "Controleer of een gebeurtenis ooit in het verleden is opgeslagen."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam"
+			}
+		}
+	]
+}

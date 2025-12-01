@@ -1,0 +1,65 @@
+{
+	"id": "events_happened_after",
+	"title": {
+		"en": "Event happened after another event",
+		"nl": "Gebeurtenis vond plaats na andere gebeurtenis"
+	},
+	"titleFormatted": {
+		"en": "[[event_id_a]] happened after [[event_id_b]] (default: [[default_value]])",
+		"nl": "[[event_id_a]] vond plaats na [[event_id_b]] (standaard: [[default_value]])"
+	},
+	"hint": {
+		"en": "Check if event A happened after event B. Returns the default value if either event never happened.",
+		"nl": "Controleer of gebeurtenis A plaatsvond na gebeurtenis B. Geeft de standaardwaarde terug als een van beide gebeurtenissen nooit plaatsvond."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id_a",
+			"title": {
+				"en": "First event ID",
+				"nl": "Eerste gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_a",
+				"nl": "mijn_unieke_event_a"
+			}
+		},
+		{
+			"type": "autocomplete",
+			"name": "event_id_b",
+			"title": {
+				"en": "Second event ID",
+				"nl": "Tweede gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_b",
+				"nl": "mijn_unieke_event_b"
+			}
+		},
+		{
+			"type": "dropdown",
+			"name": "default_value",
+			"title": {
+				"en": "Default if either event never happened",
+				"nl": "Standaard als een gebeurtenis nooit plaatsvond"
+			},
+			"values": [
+				{
+					"id": "true",
+					"title": {
+						"en": "True",
+						"nl": "Waar"
+					}
+				},
+				{
+					"id": "false",
+					"title": {
+						"en": "False",
+						"nl": "Onwaar"
+					}
+				}
+			]
+		}
+	]
+}

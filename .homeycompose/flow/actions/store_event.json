@@ -1,0 +1,29 @@
+{
+	"id": "store_event",
+	"title": {
+		"en": "Store that event happened",
+		"nl": "Sla op dat gebeurtenis plaatsvond"
+	},
+	"titleFormatted": {
+		"en": "Store that [[event_id]] happened",
+		"nl": "Sla op dat [[event_id]] plaatsvond"
+	},
+	"hint": {
+		"en": "Store the current timestamp for an event ID. You can use this later in a condition card to check how long ago this event occurred.",
+		"nl": "Sla het huidige tijdstip op voor een gebeurtenis-ID. Je kunt dit later gebruiken in een voorwaarde-kaart om te controleren hoe lang geleden deze gebeurtenis plaatsvond."
+	},
+	"args": [
+		{
+			"type": "text",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam"
+			}
+		}
+	]
+}

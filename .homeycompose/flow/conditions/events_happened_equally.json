@@ -1,0 +1,116 @@
+{
+	"id": "events_happened_equally",
+	"title": {
+		"en": "Events happened at approximately the same time",
+		"nl": "Gebeurtenissen vonden ongeveer gelijktijdig plaats"
+	},
+	"titleFormatted": {
+		"en": "[[event_id_a]] and [[event_id_b]] happened within [[margin]] [[margin_unit]] of each other (default: [[default_value]])",
+		"nl": "[[event_id_a]] en [[event_id_b]] vonden binnen [[margin]] [[margin_unit]] van elkaar plaats (standaard: [[default_value]])"
+	},
+	"hint": {
+		"en": "Check if two events happened at approximately the same time (within the margin). For example, if both events happened within 30 seconds of each other. Returns the default value if either event never happened.",
+		"nl": "Controleer of twee gebeurtenissen ongeveer gelijktijdig plaatsvonden (binnen de marge). Bijvoorbeeld als beide gebeurtenissen binnen 30 seconden van elkaar plaatsvonden. Geeft de standaardwaarde terug als één van de gebeurtenissen nooit plaatsvond."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id_a",
+			"title": {
+				"en": "First event ID",
+				"nl": "Eerste gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_a",
+				"nl": "mijn_unieke_event_a"
+			}
+		},
+		{
+			"type": "autocomplete",
+			"name": "event_id_b",
+			"title": {
+				"en": "Second event ID",
+				"nl": "Tweede gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_b",
+				"nl": "mijn_unieke_event_b"
+			}
+		},
+		{
+			"type": "number",
+			"name": "margin",
+			"title": {
+				"en": "Time margin",
+				"nl": "Tijdsmarge"
+			},
+			"placeholder": {
+				"en": "30",
+				"nl": "30"
+			},
+			"min": 0
+		},
+		{
+			"type": "dropdown",
+			"name": "margin_unit",
+			"title": {
+				"en": "Margin unit",
+				"nl": "Marge-eenheid"
+			},
+			"values": [
+				{
+					"id": "seconds",
+					"title": {
+						"en": "seconds",
+						"nl": "seconden"
+					}
+				},
+				{
+					"id": "minutes",
+					"title": {
+						"en": "minutes",
+						"nl": "minuten"
+					}
+				},
+				{
+					"id": "hours",
+					"title": {
+						"en": "hours",
+						"nl": "uren"
+					}
+				},
+				{
+					"id": "days",
+					"title": {
+						"en": "days",
+						"nl": "dagen"
+					}
+				}
+			]
+		},
+		{
+			"type": "dropdown",
+			"name": "default_value",
+			"title": {
+				"en": "Default if either event never happened",
+				"nl": "Standaard als één van de gebeurtenissen nooit plaatsvond"
+			},
+			"values": [
+				{
+					"id": "true",
+					"title": {
+						"en": "True",
+						"nl": "Waar"
+					}
+				},
+				{
+					"id": "false",
+					"title": {
+						"en": "False",
+						"nl": "Onwaar"
+					}
+				}
+			]
+		}
+	]
+}

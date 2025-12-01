@@ -1,0 +1,37 @@
+{
+	"id": "app.bloemendaal.clockwork",
+	"version": "1.0.0",
+	"compatibility": ">=12.9.0",
+	"sdk": 3,
+	"platforms": ["local"],
+	"name": {
+		"en": "Clockwork"
+	},
+	"description": {
+		"en": "Remember when something happened in your flows"
+	},
+	"bugs": {
+		"url": "https://github.com/Bloemendaal/app.bloemendaal.clockwork/issues"
+	},
+	"contributing": {
+		"donate": {
+			"githubSponsors": {
+				"username": "Bloemendaal"
+			}
+		}
+	},
+	"brandColor": "#128937",
+	"category": ["tools"],
+	"permissions": [],
+	"source": "https://github.com/Bloemendaal/app.bloemendaal.clockwork",
+	"support": "mailto:casperbloemendaal@gmail.com",
+	"images": {
+		"small": "/assets/images/small.png",
+		"large": "/assets/images/large.png",
+		"xlarge": "/assets/images/xlarge.png"
+	},
+	"author": {
+		"name": "Casper Bloemendaal",
+		"email": "casperbloemendaal@gmail.com"
+	}
+}

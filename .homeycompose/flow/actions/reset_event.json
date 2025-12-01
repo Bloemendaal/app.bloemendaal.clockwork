@@ -1,0 +1,29 @@
+{
+	"id": "reset_event",
+	"title": {
+		"en": "Reset event timestamp",
+		"nl": "Reset gebeurtenis tijdstip"
+	},
+	"titleFormatted": {
+		"en": "Reset timestamp for [[event_id]]",
+		"nl": "Reset tijdstip voor [[event_id]]"
+	},
+	"hint": {
+		"en": "Removes the stored timestamp for the selected event ID. The event will behave as if it never happened.",
+		"nl": "Verwijdert het opgeslagen tijdstip voor de geselecteerde gebeurtenis-ID. De gebeurtenis gedraagt zich alsof deze nooit is gebeurd."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam"
+			}
+		}
+	]
+}

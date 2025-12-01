@@ -1,0 +1,29 @@
+{
+	"id": "event_never_happened",
+	"title": {
+		"en": "Event has never happened",
+		"nl": "Gebeurtenis heeft nooit plaatsgevonden"
+	},
+	"titleFormatted": {
+		"en": "[[event_id]] has never happened",
+		"nl": "[[event_id]] heeft nooit plaatsgevonden"
+	},
+	"hint": {
+		"en": "Check if an event has never been recorded. Useful for first-time detection.",
+		"nl": "Controleer of een gebeurtenis nooit is opgeslagen. Handig voor eerste keer detectie."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam"
+			}
+		}
+	]
+}

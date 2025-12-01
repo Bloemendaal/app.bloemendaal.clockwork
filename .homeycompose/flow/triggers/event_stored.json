@@ -1,0 +1,53 @@
+{
+	"id": "event_stored",
+	"title": {
+		"en": "An event was stored",
+		"nl": "Een gebeurtenis werd opgeslagen"
+	},
+	"titleFormatted": {
+		"en": "Event [[event_id]] was stored",
+		"nl": "Gebeurtenis [[event_id]] werd opgeslagen"
+	},
+	"hint": {
+		"en": "Triggers when an event timestamp is stored using the 'Store that event happened' action card.",
+		"nl": "Wordt geactiveerd wanneer een gebeurtenis-tijdstempel wordt opgeslagen met de 'Sla op dat gebeurtenis plaatsvond' actiekaart."
+	},
+	"tokens": [
+		{
+			"name": "event_id",
+			"type": "string",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID"
+			},
+			"example": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam"
+			}
+		},
+		{
+			"name": "timestamp",
+			"type": "number",
+			"title": {
+				"en": "Timestamp",
+				"nl": "Tijdstempel"
+			},
+			"example": 1701350400000
+		}
+	],
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID (optional)",
+				"nl": "Gebeurtenis-ID (optioneel)"
+			},
+			"placeholder": {
+				"en": "Leave empty for any event",
+				"nl": "Laat leeg voor elke gebeurtenis"
+			},
+			"required": false
+		}
+	]
+}

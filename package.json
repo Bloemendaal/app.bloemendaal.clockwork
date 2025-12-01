@@ -1,0 +1,19 @@
+{
+	"name": "app.bloemendaal.clockwork",
+	"type": "module",
+	"version": "1.0.0",
+	"scripts": {
+		"build": "tsc",
+		"start": "homey app run",
+		"format": "biome format --write",
+		"lint": "biome lint --write",
+		"check": "biome check --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.3.8",
+		"@tsconfig/node22": "^22.0.5",
+		"@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
+		"@types/node": "^22.19.1",
+		"typescript": "^5.9.3"
+	}
+}

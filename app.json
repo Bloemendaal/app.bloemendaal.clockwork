@@ -1,0 +1,791 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "app.bloemendaal.clockwork",
+  "version": "1.0.0",
+  "compatibility": ">=12.9.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Clockwork"
+  },
+  "description": {
+    "en": "Remember when something happened in your flows"
+  },
+  "bugs": {
+    "url": "https://github.com/Bloemendaal/app.bloemendaal.clockwork/issues"
+  },
+  "contributing": {
+    "donate": {
+      "githubSponsors": {
+        "username": "Bloemendaal"
+      }
+    }
+  },
+  "brandColor": "#128937",
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Bloemendaal/app.bloemendaal.clockwork",
+  "support": "mailto:casperbloemendaal@gmail.com",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Casper Bloemendaal",
+    "email": "casperbloemendaal@gmail.com"
+  },
+  "esm": true,
+  "flow": {
+    "triggers": [
+      {
+        "id": "event_stored",
+        "title": {
+          "en": "An event was stored",
+          "nl": "Een gebeurtenis werd opgeslagen"
+        },
+        "titleFormatted": {
+          "en": "Event [[event_id]] was stored",
+          "nl": "Gebeurtenis [[event_id]] werd opgeslagen"
+        },
+        "hint": {
+          "en": "Triggers when an event timestamp is stored using the 'Store that event happened' action card.",
+          "nl": "Wordt geactiveerd wanneer een gebeurtenis-tijdstempel wordt opgeslagen met de 'Sla op dat gebeurtenis plaatsvond' actiekaart."
+        },
+        "tokens": [
+          {
+            "name": "event_id",
+            "type": "string",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "example": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          },
+          {
+            "name": "timestamp",
+            "type": "number",
+            "title": {
+              "en": "Timestamp",
+              "nl": "Tijdstempel"
+            },
+            "example": 1701350400000
+          }
+        ],
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID (optional)",
+              "nl": "Gebeurtenis-ID (optioneel)"
+            },
+            "placeholder": {
+              "en": "Leave empty for any event",
+              "nl": "Laat leeg voor elke gebeurtenis"
+            },
+            "required": false
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "event_happened_between",
+        "title": {
+          "en": "Event happened between times ago",
+          "nl": "Gebeurtenis vond tussen tijden geleden plaats"
+        },
+        "titleFormatted": {
+          "en": "[[event_id]] happened between [[min_time]] and [[max_time]] [[unit]] ago (default: [[default_value]])",
+          "nl": "[[event_id]] vond tussen [[min_time]] en [[max_time]] [[unit]] geleden plaats (standaard: [[default_value]])"
+        },
+        "hint": {
+          "en": "Check if an event happened within a time window (between min and max). Returns the default value if the event never happened.",
+          "nl": "Controleer of een gebeurtenis binnen een tijdsperiode plaatsvond (tussen min en max). Geeft de standaardwaarde terug als de gebeurtenis nooit plaatsvond."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "min_time",
+            "title": {
+              "en": "Minimum time",
+              "nl": "Minimum tijd"
+            },
+            "placeholder": {
+              "en": "5",
+              "nl": "5"
+            },
+            "min": 0
+          },
+          {
+            "type": "number",
+            "name": "max_time",
+            "title": {
+              "en": "Maximum time",
+              "nl": "Maximum tijd"
+            },
+            "placeholder": {
+              "en": "15",
+              "nl": "15"
+            },
+            "min": 0
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Time unit",
+              "nl": "Tijdseenheid"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "default_value",
+            "title": {
+              "en": "Default if event never happened",
+              "nl": "Standaard als gebeurtenis nooit plaatsvond"
+            },
+            "values": [
+              {
+                "id": "true",
+                "title": {
+                  "en": "True",
+                  "nl": "Waar"
+                }
+              },
+              {
+                "id": "false",
+                "title": {
+                  "en": "False",
+                  "nl": "Onwaar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event_happened_less_than",
+        "title": {
+          "en": "Event happened less than time ago",
+          "nl": "Gebeurtenis vond minder dan tijd geleden plaats"
+        },
+        "titleFormatted": {
+          "en": "[[event_id]] happened less than [[time]] [[unit]] ago (default: [[default_value]])",
+          "nl": "[[event_id]] vond minder dan [[time]] [[unit]] geleden plaats (standaard: [[default_value]])"
+        },
+        "hint": {
+          "en": "Check if an event happened within a specific time window. Returns the default value if the event never happened.",
+          "nl": "Controleer of een gebeurtenis binnen een specifieke tijdsperiode plaatsvond. Geeft de standaardwaarde terug als de gebeurtenis nooit plaatsvond."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "time",
+            "title": {
+              "en": "Time",
+              "nl": "Tijd"
+            },
+            "placeholder": {
+              "en": "10",
+              "nl": "10"
+            },
+            "min": 0
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Time unit",
+              "nl": "Tijdseenheid"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "default_value",
+            "title": {
+              "en": "Default if event never happened",
+              "nl": "Standaard als gebeurtenis nooit plaatsvond"
+            },
+            "values": [
+              {
+                "id": "true",
+                "title": {
+                  "en": "True",
+                  "nl": "Waar"
+                }
+              },
+              {
+                "id": "false",
+                "title": {
+                  "en": "False",
+                  "nl": "Onwaar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event_happened_more_than",
+        "title": {
+          "en": "Event happened more than time ago",
+          "nl": "Gebeurtenis vond meer dan tijd geleden plaats"
+        },
+        "titleFormatted": {
+          "en": "[[event_id]] happened more than [[time]] [[unit]] ago (default: [[default_value]])",
+          "nl": "[[event_id]] vond meer dan [[time]] [[unit]] geleden plaats (standaard: [[default_value]])"
+        },
+        "hint": {
+          "en": "Check if an event happened outside a specific time window (longer ago). Returns the default value if the event never happened.",
+          "nl": "Controleer of een gebeurtenis buiten een specifieke tijdsperiode plaatsvond (langer geleden). Geeft de standaardwaarde terug als de gebeurtenis nooit plaatsvond."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "time",
+            "title": {
+              "en": "Time",
+              "nl": "Tijd"
+            },
+            "placeholder": {
+              "en": "10",
+              "nl": "10"
+            },
+            "min": 0
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Time unit",
+              "nl": "Tijdseenheid"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "default_value",
+            "title": {
+              "en": "Default if event never happened",
+              "nl": "Standaard als gebeurtenis nooit plaatsvond"
+            },
+            "values": [
+              {
+                "id": "true",
+                "title": {
+                  "en": "True",
+                  "nl": "Waar"
+                }
+              },
+              {
+                "id": "false",
+                "title": {
+                  "en": "False",
+                  "nl": "Onwaar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event_has_happened",
+        "title": {
+          "en": "Event has happened",
+          "nl": "Gebeurtenis heeft plaatsgevonden"
+        },
+        "titleFormatted": {
+          "en": "[[event_id]] has happened at least once",
+          "nl": "[[event_id]] heeft minstens één keer plaatsgevonden"
+        },
+        "hint": {
+          "en": "Check if an event has been recorded at any time in the past.",
+          "nl": "Controleer of een gebeurtenis ooit in het verleden is opgeslagen."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "event_never_happened",
+        "title": {
+          "en": "Event has never happened",
+          "nl": "Gebeurtenis heeft nooit plaatsgevonden"
+        },
+        "titleFormatted": {
+          "en": "[[event_id]] has never happened",
+          "nl": "[[event_id]] heeft nooit plaatsgevonden"
+        },
+        "hint": {
+          "en": "Check if an event has never been recorded. Useful for first-time detection.",
+          "nl": "Controleer of een gebeurtenis nooit is opgeslagen. Handig voor eerste keer detectie."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "events_happened_after",
+        "title": {
+          "en": "Event happened after another event",
+          "nl": "Gebeurtenis vond plaats na andere gebeurtenis"
+        },
+        "titleFormatted": {
+          "en": "[[event_id_a]] happened after [[event_id_b]] (default: [[default_value]])",
+          "nl": "[[event_id_a]] vond plaats na [[event_id_b]] (standaard: [[default_value]])"
+        },
+        "hint": {
+          "en": "Check if event A happened after event B. Returns the default value if either event never happened.",
+          "nl": "Controleer of gebeurtenis A plaatsvond na gebeurtenis B. Geeft de standaardwaarde terug als een van beide gebeurtenissen nooit plaatsvond."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id_a",
+            "title": {
+              "en": "First event ID",
+              "nl": "Eerste gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_a",
+              "nl": "mijn_unieke_event_a"
+            }
+          },
+          {
+            "type": "autocomplete",
+            "name": "event_id_b",
+            "title": {
+              "en": "Second event ID",
+              "nl": "Tweede gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_b",
+              "nl": "mijn_unieke_event_b"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "default_value",
+            "title": {
+              "en": "Default if either event never happened",
+              "nl": "Standaard als een gebeurtenis nooit plaatsvond"
+            },
+            "values": [
+              {
+                "id": "true",
+                "title": {
+                  "en": "True",
+                  "nl": "Waar"
+                }
+              },
+              {
+                "id": "false",
+                "title": {
+                  "en": "False",
+                  "nl": "Onwaar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "events_happened_before",
+        "title": {
+          "en": "Event happened before another event",
+          "nl": "Gebeurtenis vond plaats voor andere gebeurtenis"
+        },
+        "titleFormatted": {
+          "en": "[[event_id_a]] happened before [[event_id_b]] (default: [[default_value]])",
+          "nl": "[[event_id_a]] vond plaats voor [[event_id_b]] (standaard: [[default_value]])"
+        },
+        "hint": {
+          "en": "Check if event A happened before event B. Returns the default value if either event never happened.",
+          "nl": "Controleer of gebeurtenis A plaatsvond voor gebeurtenis B. Geeft de standaardwaarde terug als een van beide gebeurtenissen nooit plaatsvond."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id_a",
+            "title": {
+              "en": "First event ID",
+              "nl": "Eerste gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_b",
+              "nl": "mijn_unieke_event_b"
+            }
+          },
+          {
+            "type": "autocomplete",
+            "name": "event_id_b",
+            "title": {
+              "en": "Second event ID",
+              "nl": "Tweede gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_a",
+              "nl": "mijn_unieke_event_a"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "default_value",
+            "title": {
+              "en": "Default if either event never happened",
+              "nl": "Standaard als een gebeurtenis nooit plaatsvond"
+            },
+            "values": [
+              {
+                "id": "true",
+                "title": {
+                  "en": "True",
+                  "nl": "Waar"
+                }
+              },
+              {
+                "id": "false",
+                "title": {
+                  "en": "False",
+                  "nl": "Onwaar"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "events_happened_equally",
+        "title": {
+          "en": "Events happened at approximately the same time",
+          "nl": "Gebeurtenissen vonden ongeveer gelijktijdig plaats"
+        },
+        "titleFormatted": {
+          "en": "[[event_id_a]] and [[event_id_b]] happened within [[margin]] [[margin_unit]] of each other (default: [[default_value]])",
+          "nl": "[[event_id_a]] en [[event_id_b]] vonden binnen [[margin]] [[margin_unit]] van elkaar plaats (standaard: [[default_value]])"
+        },
+        "hint": {
+          "en": "Check if two events happened at approximately the same time (within the margin). For example, if both events happened within 30 seconds of each other. Returns the default value if either event never happened.",
+          "nl": "Controleer of twee gebeurtenissen ongeveer gelijktijdig plaatsvonden (binnen de marge). Bijvoorbeeld als beide gebeurtenissen binnen 30 seconden van elkaar plaatsvonden. Geeft de standaardwaarde terug als één van de gebeurtenissen nooit plaatsvond."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id_a",
+            "title": {
+              "en": "First event ID",
+              "nl": "Eerste gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_a",
+              "nl": "mijn_unieke_event_a"
+            }
+          },
+          {
+            "type": "autocomplete",
+            "name": "event_id_b",
+            "title": {
+              "en": "Second event ID",
+              "nl": "Tweede gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_b",
+              "nl": "mijn_unieke_event_b"
+            }
+          },
+          {
+            "type": "number",
+            "name": "margin",
+            "title": {
+              "en": "Time margin",
+              "nl": "Tijdsmarge"
+            },
+            "placeholder": {
+              "en": "30",
+              "nl": "30"
+            },
+            "min": 0
+          },
+          {
+            "type": "dropdown",
+            "name": "margin_unit",
+            "title": {
+              "en": "Margin unit",
+              "nl": "Marge-eenheid"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen"
+                }
+              }
+            ]
+          },
+          {
+            "type": "dropdown",
+            "name": "default_value",
+            "title": {
+              "en": "Default if either event never happened",
+              "nl": "Standaard als één van de gebeurtenissen nooit plaatsvond"
+            },
+            "values": [
+              {
+                "id": "true",
+                "title": {
+                  "en": "True",
+                  "nl": "Waar"
+                }
+              },
+              {
+                "id": "false",
+                "title": {
+                  "en": "False",
+                  "nl": "Onwaar"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "reset_event",
+        "title": {
+          "en": "Reset event timestamp",
+          "nl": "Reset gebeurtenis tijdstip"
+        },
+        "titleFormatted": {
+          "en": "Reset timestamp for [[event_id]]",
+          "nl": "Reset tijdstip voor [[event_id]]"
+        },
+        "hint": {
+          "en": "Removes the stored timestamp for the selected event ID. The event will behave as if it never happened.",
+          "nl": "Verwijdert het opgeslagen tijdstip voor de geselecteerde gebeurtenis-ID. De gebeurtenis gedraagt zich alsof deze nooit is gebeurd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "store_event",
+        "title": {
+          "en": "Store that event happened",
+          "nl": "Sla op dat gebeurtenis plaatsvond"
+        },
+        "titleFormatted": {
+          "en": "Store that [[event_id]] happened",
+          "nl": "Sla op dat [[event_id]] plaatsvond"
+        },
+        "hint": {
+          "en": "Store the current timestamp for an event ID. You can use this later in a condition card to check how long ago this event occurred.",
+          "nl": "Sla het huidige tijdstip op voor een gebeurtenis-ID. Je kunt dit later gebruiken in een voorwaarde-kaart om te controleren hoe lang geleden deze gebeurtenis plaatsvond."
+        },
+        "args": [
+          {
+            "type": "text",
+            "name": "event_id",
+            "title": {
+              "en": "Event ID",
+              "nl": "Gebeurtenis-ID"
+            },
+            "placeholder": {
+              "en": "my_unique_event_name",
+              "nl": "mijn_unieke_gebeurtenisnaam"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
