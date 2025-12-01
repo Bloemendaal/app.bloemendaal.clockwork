@@ -1,53 +1,133 @@
 {
-	"id": "event_stored",
-	"title": {
-		"en": "An event was stored",
-		"nl": "Een gebeurtenis werd opgeslagen"
-	},
-	"titleFormatted": {
-		"en": "Event [[event_id]] was stored",
-		"nl": "Gebeurtenis [[event_id]] werd opgeslagen"
-	},
-	"hint": {
-		"en": "Triggers when an event timestamp is stored using the 'Store that event happened' action card.",
-		"nl": "Wordt geactiveerd wanneer een gebeurtenis-tijdstempel wordt opgeslagen met de 'Sla op dat gebeurtenis plaatsvond' actiekaart."
-	},
-	"tokens": [
-		{
-			"name": "event_id",
-			"type": "string",
-			"title": {
-				"en": "Event ID",
-				"nl": "Gebeurtenis-ID"
-			},
-			"example": {
-				"en": "my_unique_event_name",
-				"nl": "mijn_unieke_gebeurtenisnaam"
-			}
-		},
-		{
-			"name": "timestamp",
-			"type": "number",
-			"title": {
-				"en": "Timestamp",
-				"nl": "Tijdstempel"
-			},
-			"example": 1701350400000
-		}
-	],
-	"args": [
-		{
-			"type": "autocomplete",
-			"name": "event_id",
-			"title": {
-				"en": "Event ID (optional)",
-				"nl": "Gebeurtenis-ID (optioneel)"
-			},
-			"placeholder": {
-				"en": "Leave empty for any event",
-				"nl": "Laat leeg voor elke gebeurtenis"
-			},
-			"required": false
-		}
-	]
+  "id": "event_stored",
+  "title": {
+    "en": "An event was stored",
+    "nl": "Een gebeurtenis werd opgeslagen",
+    "da": "En begivenhed blev gemt",
+    "de": "Ein Ereignis wurde gespeichert",
+    "es": "Se almacenó un evento",
+    "fr": "Un événement a été enregistré",
+    "it": "Un evento è stato memorizzato",
+    "no": "En hendelse ble lagret",
+    "sv": "En händelse lagrades",
+    "pl": "Wydarzenie zostało zapisane",
+    "ru": "Событие было сохранено",
+    "ko": "이벤트가 저장되었습니다"
+  },
+  "titleFormatted": {
+    "en": "Event [[event_id]] was stored",
+    "nl": "Gebeurtenis [[event_id]] werd opgeslagen",
+    "da": "Begivenhed [[event_id]] blev gemt",
+    "de": "Ereignis [[event_id]] wurde gespeichert",
+    "es": "Se almacenó el evento [[event_id]]",
+    "fr": "L'événement [[event_id]] a été enregistré",
+    "it": "L'evento [[event_id]] è stato memorizzato",
+    "no": "Hendelsen [[event_id]] ble lagret",
+    "sv": "Händelsen [[event_id]] lagrades",
+    "pl": "Wydarzenie [[event_id]] zostało zapisane",
+    "ru": "Событие [[event_id]] было сохранено",
+    "ko": "이벤트 [[event_id]]가 저장되었습니다"
+  },
+  "hint": {
+    "en": "Triggers when an event timestamp is stored using the 'Store that event happened' action card.",
+    "nl": "Wordt geactiveerd wanneer een gebeurtenis-tijdstempel wordt opgeslagen met de 'Sla op dat gebeurtenis plaatsvond' actiekaart.",
+    "da": "Udløses, når et begivenhedstidsstempel gemmes ved hjælp af 'Gem at begivenhed skete'-handlingskortet.",
+    "de": "Wird ausgelöst, wenn ein Ereignis-Zeitstempel mithilfe der Aktionskarte 'Speichern, dass ein Ereignis stattgefunden hat' gespeichert wird.",
+    "es": "Se activa cuando se almacena una marca de tiempo de evento usando la tarjeta de acción 'Guardar que el evento ocurrió'.",
+    "fr": "Se déclenche lorsqu'un horodatage d'événement est enregistré à l'aide de la carte d'action 'Enregistrer que l'événement s'est produit'.",
+    "it": "Si attiva quando un timestamp di evento viene memorizzato utilizzando la scheda azione 'Memorizza che l'evento è avvenuto'.",
+    "no": "Utlyses når en hendelsestidsstempel lagres ved å bruke 'Lagre at hendelsen skjedde'-handlingskortet.",
+    "sv": "Utlöses när en händelsetidsstämpel lagras med hjälp av 'Spara att händelse inträffade'-åtgärdskortet.",
+    "pl": "Uruchamiane, gdy znacznik czasu wydarzenia zostanie zapisany przy użyciu karty akcji 'Zapisz, że wydarzenie miało miejsce'.",
+    "ru": "Срабатывает, когда временная метка события сохраняется с помощью карты действия «Сохранить, что событие произошло».",
+    "ko": "'이벤트가 발생한 것을 저장' 액션 카드를 사용하여 이벤트 타임스탬프가 저장될 때 트리거됩니다."
+  },
+  "tokens": [
+    {
+      "name": "event_id",
+      "type": "string",
+      "title": {
+        "en": "Event ID",
+        "nl": "Gebeurtenis-ID",
+        "da": "Begivenheds-ID",
+        "de": "Ereignis-ID",
+        "es": "ID del evento",
+        "fr": "ID de l'événement",
+        "it": "ID evento",
+        "no": "Hendelses-ID",
+        "sv": "Händelse-ID",
+        "pl": "ID zdarzenia",
+        "ru": "ID события",
+        "ko": "이벤트 ID"
+      },
+      "example": {
+        "en": "my_unique_event_name",
+        "nl": "mijn_unieke_gebeurtenisnaam",
+        "da": "mit_unikke_begivenhed_navn",
+        "de": "mein_einzigartiger_ereignisname",
+        "es": "mi_nombre_de_evento_único",
+        "fr": "mon_nom_d'événement_unique",
+        "it": "mio_nome_unico_evento",
+        "no": "mitt_unike_hendelsesnavn",
+        "sv": "mitt_unika_händelsenamn",
+        "pl": "moja_unikalna_nazwa_wydarzenia",
+        "ru": "мое_уникальное_название_события",
+        "ko": "내_고유의_이벤트_이름"
+      }
+    },
+    {
+      "name": "timestamp",
+      "type": "number",
+      "title": {
+        "en": "Timestamp",
+        "nl": "Tijdstempel",
+        "da": "Tidsstempel",
+        "de": "Zeitstempel",
+        "es": "Marca de tiempo",
+        "fr": "Horodatage",
+        "it": "Timestamp",
+        "no": "Tidsstempel",
+        "sv": "Tidsstämpel",
+        "pl": "Znacznik czasu",
+        "ru": "Временная метка",
+        "ko": "타임스탬프"
+      },
+      "example": 1701350400000
+    }
+  ],
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "event_id",
+      "title": {
+        "en": "Event ID (optional)",
+        "nl": "Gebeurtenis-ID (optioneel)",
+        "da": "Begivenheds-ID (valgfrit)",
+        "de": "Ereignis-ID (optional)",
+        "es": "ID del evento (opcional)",
+        "fr": "ID de l'événement (optionnel)",
+        "it": "ID evento (facoltativo)",
+        "no": "Hendelses-ID (valgfritt)",
+        "sv": "Händelse-ID (valfritt)",
+        "pl": "ID wydarzenia (opcjonalnie)",
+        "ru": "ID события (необязательно)",
+        "ko": "이벤트 ID (선택 사항)"
+      },
+      "placeholder": {
+        "en": "Leave empty for any event",
+        "nl": "Laat leeg voor elke gebeurtenis",
+        "da": "Efterlad tom for enhver begivenhed",
+        "de": "Leer lassen für jedes Ereignis",
+        "es": "Dejar vacío para cualquier evento",
+        "fr": "Laisser vide pour tout événement",
+        "it": "Lascia vuoto per qualsiasi evento",
+        "no": "La stå tomt for enhver hendelse",
+        "sv": "Lämna tomt för alla händelser",
+        "pl": "Pozostaw puste dla dowolnego zdarzenia",
+        "ru": "Оставьте пустым для любого события",
+        "ko": "모든 이벤트에 대해 비워두세요"
+      },
+      "required": false
+    }
+  ]
 }

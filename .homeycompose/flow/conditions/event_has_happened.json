@@ -1,29 +1,79 @@
 {
-	"id": "event_has_happened",
-	"title": {
-		"en": "Event has happened",
-		"nl": "Gebeurtenis heeft plaatsgevonden"
-	},
-	"titleFormatted": {
-		"en": "[[event_id]] has happened at least once",
-		"nl": "[[event_id]] heeft minstens één keer plaatsgevonden"
-	},
-	"hint": {
-		"en": "Check if an event has been recorded at any time in the past.",
-		"nl": "Controleer of een gebeurtenis ooit in het verleden is opgeslagen."
-	},
-	"args": [
-		{
-			"type": "autocomplete",
-			"name": "event_id",
-			"title": {
-				"en": "Event ID",
-				"nl": "Gebeurtenis-ID"
-			},
-			"placeholder": {
-				"en": "my_unique_event_name",
-				"nl": "mijn_unieke_gebeurtenisnaam"
-			}
-		}
-	]
+  "id": "event_has_happened",
+  "title": {
+    "en": "Event has happened",
+    "nl": "Gebeurtenis heeft plaatsgevonden",
+    "da": "Begivenhed er sket",
+    "de": "Ereignis ist passiert",
+    "es": "El evento ha ocurrido",
+    "fr": "L'événement a eu lieu",
+    "it": "L'evento è accaduto",
+    "no": "Hendelsen har skjedd",
+    "sv": "Händelsen har inträffat",
+    "pl": "Wydarzenie miało miejsce",
+    "ru": "Событие произошло",
+    "ko": "이벤트가 발생했습니다"
+  },
+  "titleFormatted": {
+    "en": "[[event_id]] has happened at least once",
+    "nl": "[[event_id]] heeft minstens één keer plaatsgevonden",
+    "da": "[[event_id]] er sket mindst én gang",
+    "de": "[[event_id]] ist mindestens einmal passiert",
+    "es": "[[event_id]] ha ocurrido al menos una vez",
+    "fr": "[[event_id]] a eu lieu au moins une fois",
+    "it": "[[event_id]] è successo almeno una volta",
+    "no": "[[event_id]] har skjedd minst en gang",
+    "sv": "[[event_id]] har inträffat minst en gång",
+    "pl": "[[event_id]] zdarzyło się przynajmniej raz",
+    "ru": "[[event_id]] произошло как минимум один раз",
+    "ko": "[[event_id]]가 한 번 이상 발생했습니다"
+  },
+  "hint": {
+    "en": "Check if an event has been recorded at any time in the past.",
+    "nl": "Controleer of een gebeurtenis ooit in het verleden is opgeslagen.",
+    "da": "Tjek om en begivenhed er blevet registreret på noget tidspunkt i fortiden.",
+    "de": "Überprüfen Sie, ob ein Ereignis jemals in der Vergangenheit aufgezeichnet wurde.",
+    "es": "Verifica si un evento se ha registrado en algún momento en el pasado.",
+    "fr": "Vérifiez si un événement a été enregistré à un moment donné dans le passé.",
+    "it": "Controlla se un evento è stato registrato in passato.",
+    "no": "Sjekk om en hendelse har blitt registrert i fortiden.",
+    "sv": "Kontrollera om en händelse har registrerats vid något tillfälle tidigare.",
+    "pl": "Sprawdź, czy wydarzenie zostało kiedykolwiek zarejestrowane.",
+    "ru": "Проверьте, было ли событие когда-либо записано в прошлом.",
+    "ko": "과거에 이벤트가 기록되었는지 확인하세요."
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "event_id",
+      "title": {
+        "en": "Event ID",
+        "nl": "Gebeurtenis-ID",
+        "da": "Begivenheds-ID",
+        "de": "Ereignis-ID",
+        "es": "ID del evento",
+        "fr": "ID de l'événement",
+        "it": "ID evento",
+        "no": "Hendelses-ID",
+        "sv": "Händelse-ID",
+        "pl": "ID wydarzenia",
+        "ru": "ID события",
+        "ko": "이벤트 ID"
+      },
+      "placeholder": {
+        "en": "my_unique_event_name",
+        "nl": "mijn_unieke_gebeurtenisnaam",
+        "da": "mit_unikke_begivenhedsnavn",
+        "de": "mein_einzigartiger_ereignisname",
+        "es": "mi_nombre_de_evento_único",
+        "fr": "mon_nom_d'événement_unique",
+        "it": "mio_nome_evento_unico",
+        "no": "mitt_unike_hendelsesnavn",
+        "sv": "mitt_unika_händelsenamn",
+        "pl": "moja_unikalna_nazwa_wydarzenia",
+        "ru": "мое_уникальное_название_события",
+        "ko": "나만의_고유_이벤트_이름"
+      }
+    }
+  ]
 }

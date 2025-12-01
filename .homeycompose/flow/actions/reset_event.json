@@ -1,29 +1,79 @@
 {
-	"id": "reset_event",
-	"title": {
-		"en": "Reset event timestamp",
-		"nl": "Reset gebeurtenis tijdstip"
-	},
-	"titleFormatted": {
-		"en": "Reset timestamp for [[event_id]]",
-		"nl": "Reset tijdstip voor [[event_id]]"
-	},
-	"hint": {
-		"en": "Removes the stored timestamp for the selected event ID. The event will behave as if it never happened.",
-		"nl": "Verwijdert het opgeslagen tijdstip voor de geselecteerde gebeurtenis-ID. De gebeurtenis gedraagt zich alsof deze nooit is gebeurd."
-	},
-	"args": [
-		{
-			"type": "autocomplete",
-			"name": "event_id",
-			"title": {
-				"en": "Event ID",
-				"nl": "Gebeurtenis-ID"
-			},
-			"placeholder": {
-				"en": "my_unique_event_name",
-				"nl": "mijn_unieke_gebeurtenisnaam"
-			}
-		}
-	]
+  "id": "reset_event",
+  "title": {
+    "en": "Reset event timestamp",
+    "nl": "Reset gebeurtenis tijdstip",
+    "da": "Nulstil hændelses tidsstempel",
+    "de": "Ereignis-Zeitstempel zurücksetzen",
+    "es": "Restablecer la marca de tiempo del evento",
+    "fr": "Réinitialiser le timestamp de l'événement",
+    "it": "Reimposta il timestamp dell'evento",
+    "no": "Tilbakestill hendelsens tidsstempel",
+    "sv": "Återställ tidsstämpel för händelse",
+    "pl": "Zresetuj znacznik czasu zdarzenia",
+    "ru": "Сбросить метку времени события",
+    "ko": "이벤트 타임스탬프 재설정"
+  },
+  "titleFormatted": {
+    "en": "Reset timestamp for [[event_id]]",
+    "nl": "Reset tijdstip voor [[event_id]]",
+    "da": "Nulstil tidsstempel for [[event_id]]",
+    "de": "Zeitstempel für [[event_id]] zurücksetzen",
+    "es": "Restablecer la marca de tiempo para [[event_id]]",
+    "fr": "Réinitialiser le timestamp pour [[event_id]]",
+    "it": "Reimposta il timestamp per [[event_id]]",
+    "no": "Tilbakestill tidsstempel for [[event_id]]",
+    "sv": "Återställ tidsstämpel för [[event_id]]",
+    "pl": "Zresetuj znacznik czasu dla [[event_id]]",
+    "ru": "Сбросить метку времени для [[event_id]]",
+    "ko": "[[event_id]]에 대한 타임스탬프 재설정"
+  },
+  "hint": {
+    "en": "Removes the stored timestamp for the selected event ID. The event will behave as if it never happened.",
+    "nl": "Verwijdert het opgeslagen tijdstip voor de geselecteerde gebeurtenis-ID. De gebeurtenis gedraagt zich alsof deze nooit is gebeurd.",
+    "da": "Fjerner det lagrede tidsstempel for den valgte hændelses-ID. Hændelsen vil opføre sig som om den aldrig skete.",
+    "de": "Entfernt das gespeicherte Zeitstempel für die ausgewählte Ereignis-ID. Das Ereignis verhält sich so, als ob es nie stattgefunden hätte.",
+    "es": "Elimina la marca de tiempo almacenada para el ID de evento seleccionado. El evento se comportará como si nunca hubiera ocurrido.",
+    "fr": "Supprime le timestamp enregistré pour l'ID d'événement sélectionné. L'événement se comportera comme s'il n'avait jamais eu lieu.",
+    "it": "Rimuove il timestamp memorizzato per l'ID evento selezionato. L'evento si comporterà come se non fosse mai avvenuto.",
+    "no": "Fjerner den lagrede tidsstempelet for valgt hendelses-ID. Hendelsen vil oppføre seg som om den aldri skjedde.",
+    "sv": "Tar bort det sparade tidsstämpeln för den valda händelse-ID:n. Händelsen kommer att bete sig som om den aldrig inträffade.",
+    "pl": "Usuwa przechowany znacznik czasu dla wybranego ID zdarzenia. Zdarzenie będzie się zachowywać, jakby nigdy się nie wydarzyło.",
+    "ru": "Удаляет сохраненную метку времени для выбранного ID события. Событие будет вести себя так, как будто его никогда не было.",
+    "ko": "선택한 이벤트 ID의 저장된 타임스탬프를 제거합니다. 이벤트는 마치 일어나지 않은 것처럼 동작합니다."
+  },
+  "args": [
+    {
+      "type": "autocomplete",
+      "name": "event_id",
+      "title": {
+        "en": "Event ID",
+        "nl": "Gebeurtenis-ID",
+        "da": "Hændelses-ID",
+        "de": "Ereignis-ID",
+        "es": "ID de evento",
+        "fr": "ID d'événement",
+        "it": "ID evento",
+        "no": "Hendelses-ID",
+        "sv": "Händelse-ID",
+        "pl": "ID zdarzenia",
+        "ru": "ID события",
+        "ko": "이벤트 ID"
+      },
+      "placeholder": {
+        "en": "my_unique_event_name",
+        "nl": "mijn_unieke_gebeurtenisnaam",
+        "da": "mit_unikke_hændelsesnavn",
+        "de": "mein_einzigartiger_ereignisname",
+        "es": "mi_nombre_de_evento_único",
+        "fr": "mon_nom_d'événement_unique",
+        "it": "mio_nome_evento_unico",
+        "no": "mitt_unike_hendelsesnavn",
+        "sv": "mitt_unika_händelsenamn",
+        "pl": "moja_unikalna_nazwa_zdarzenia",
+        "ru": "мое_уникальное_название_события",
+        "ko": "나의_유일한_이벤트_이름"
+      }
+    }
+  ]
 }

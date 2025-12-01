@@ -1,37 +1,63 @@
 {
-	"id": "app.bloemendaal.clockwork",
-	"version": "1.0.0",
-	"compatibility": ">=12.9.0",
-	"sdk": 3,
-	"platforms": ["local"],
-	"name": {
-		"en": "Clockwork"
-	},
-	"description": {
-		"en": "Remember when something happened in your flows"
-	},
-	"bugs": {
-		"url": "https://github.com/Bloemendaal/app.bloemendaal.clockwork/issues"
-	},
-	"contributing": {
-		"donate": {
-			"githubSponsors": {
-				"username": "Bloemendaal"
-			}
-		}
-	},
-	"brandColor": "#128937",
-	"category": ["tools"],
-	"permissions": [],
-	"source": "https://github.com/Bloemendaal/app.bloemendaal.clockwork",
-	"support": "mailto:casperbloemendaal@gmail.com",
-	"images": {
-		"small": "/assets/images/small.png",
-		"large": "/assets/images/large.png",
-		"xlarge": "/assets/images/xlarge.png"
-	},
-	"author": {
-		"name": "Casper Bloemendaal",
-		"email": "casperbloemendaal@gmail.com"
-	}
+  "id": "app.bloemendaal.clockwork",
+  "version": "1.0.0",
+  "compatibility": ">=12.9.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Clockwork",
+    "nl": "Raderwerk",
+    "da": "Urværk",
+    "de": "Uhrwerk",
+    "es": "Mecanismo",
+    "fr": "Mécanisme",
+    "it": "Macchina",
+    "no": "Urverk",
+    "sv": "Urverk",
+    "pl": "Mechanizm",
+    "ru": "Часовой механизм",
+    "ko": "시계 장치"
+  },
+  "description": {
+    "en": "Remember when something happened in your flows",
+    "nl": "Herinner je wanneer er iets gebeurde in je flows",
+    "da": "Husk hvornår noget skete i dine flows",
+    "de": "Erinnere dich, wann etwas in deinen Abläufen passiert ist",
+    "es": "Recuerda cuándo ocurrió algo en tus flujos",
+    "fr": "Souvenez-vous quand quelque chose s'est produit dans vos flux",
+    "it": "Ricorda quando è successo qualcosa nei tuoi flussi",
+    "no": "Husk når noe skjedde i flytene dine",
+    "sv": "Kom ihåg när något hände i dina flöden",
+    "pl": "Pamiętaj, kiedy coś się wydarzyło w twoich przepływach",
+    "ru": "Помните, когда что-то произошло в ваших потоках",
+    "ko": "흐름에서 무언가가 일어났을 때를 기억하세요"
+  },
+  "bugs": {
+    "url": "https://github.com/Bloemendaal/app.bloemendaal.clockwork/issues"
+  },
+  "contributing": {
+    "donate": {
+      "githubSponsors": {
+        "username": "Bloemendaal"
+      }
+    }
+  },
+  "brandColor": "#27a57b",
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "source": "https://github.com/Bloemendaal/app.bloemendaal.clockwork",
+  "support": "mailto:casperbloemendaal@gmail.com",
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Casper Bloemendaal",
+    "email": "casperbloemendaal@gmail.com"
+  }
 }
