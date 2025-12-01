@@ -1,254 +1,254 @@
 {
-  "id": "event_happened_less_than",
-  "title": {
-    "en": "Event happened less than time ago",
-    "nl": "Gebeurtenis vond minder dan tijd geleden plaats",
-    "da": "Begivenhed skete for mindre end tid siden",
-    "de": "Ereignis ist vor weniger als Zeit passiert",
-    "es": "El evento ocurrió hace menos tiempo",
-    "fr": "L'événement s'est produit il y a moins de temps",
-    "it": "L'evento è accaduto meno di tempo fa",
-    "no": "Hendelse skjedde for mindre enn tid siden",
-    "sv": "Händelse inträffade för mindre än tid sedan",
-    "pl": "Zdarzenie miało miejsce mniej niż czas temu",
-    "ru": "Событие произошло менее чем время назад",
-    "ko": "이벤트가 발생한 지 시간이 지나지 않았습니다"
-  },
-  "titleFormatted": {
-    "en": "[[event_id]] happened less than [[time]] [[unit]] ago (default: [[default_value]])",
-    "nl": "[[event_id]] vond minder dan [[time]] [[unit]] geleden plaats (standaard: [[default_value]])",
-    "da": "[[event_id]] skete for mindre end [[time]] [[unit]] siden (standard: [[default_value]])",
-    "de": "[[event_id]] geschah vor weniger als [[time]] [[unit]] (Standard: [[default_value]])",
-    "es": "[[event_id]] ocurrió hace menos de [[time]] [[unit]] (predeterminado: [[default_value]])",
-    "fr": "[[event_id]] s'est produit il y a moins de [[time]] [[unit]] (par défaut : [[default_value]])",
-    "it": "[[event_id]] è accaduto meno di [[time]] [[unit]] fa (predefinito: [[default_value]])",
-    "no": "[[event_id]] skjedde for mindre enn [[time]] [[unit]] siden (standard: [[default_value]])",
-    "sv": "[[event_id]] inträffade för mindre än [[time]] [[unit]] sedan (standard: [[default_value]])",
-    "pl": "[[event_id]] miało miejsce miej niż [[time]] [[unit]] temu (domyślnie: [[default_value]])",
-    "ru": "[[event_id]] произошло менее чем [[time]] [[unit]] назад (по умолчанию: [[default_value]])",
-    "ko": "[[event_id]]가 [[time]] [[unit]] 이내에 발생했습니다 (기본: [[default_value]])"
-  },
-  "hint": {
-    "en": "Check if an event happened within a specific time window. Returns the default value if the event never happened.",
-    "nl": "Controleer of een gebeurtenis binnen een specifieke tijdsperiode plaatsvond. Geeft de standaardwaarde terug als de gebeurtenis nooit plaatsvond.",
-    "da": "Tjek om en begivenhed skete inden for et specifikt tidsvindue. Returnerer standardværdien hvis begivenheden aldrig skete.",
-    "de": "Überprüfen Sie, ob ein Ereignis innerhalb eines bestimmten Zeitraums passiert ist. Gibt den Standardwert zurück, wenn das Ereignis nie stattgefunden hat.",
-    "es": "Compruebe si un evento ocurrió dentro de un tiempo específico. Devuelve el valor predeterminado si el evento nunca ocurrió.",
-    "fr": "Vérifiez si un événement s'est produit dans une fenêtre de temps spécifique. Renvoie la valeur par défaut si l'événement ne s'est jamais produit.",
-    "it": "Controlla se un evento è avvenuto entro un periodo di tempo specifico. Restituisce il valore predefinito se l'evento non è mai avvenuto.",
-    "no": "Sjekk om en hendelse skjedde innenfor et spesifikt tidsvindu. Returnerer standardverdien hvis hendelsen aldri skjedde.",
-    "sv": "Kontrollera om en händelse inträffade inom en viss tidsram. Returnerar standardvärdet om händelsen aldrig inträffade.",
-    "pl": "Sprawdź, czy zdarzenie miało miejsce w określonym przedziale czasowym. Zwraca domyślną wartość, jeśli zdarzenie nigdy nie miało miejsca.",
-    "ru": "Проверьте, произошло ли событие в течение определенного временного окна. Возвращает значение по умолчанию, если событие никогда не происходило.",
-    "ko": "특정 시간 범위 내에서 이벤트가 발생했는지 확인하십시오. 이벤트가 발생하지 않은 경우 기본값을 반환합니다."
-  },
-  "args": [
-    {
-      "type": "autocomplete",
-      "name": "event_id",
-      "title": {
-        "en": "Event ID",
-        "nl": "Gebeurtenis-ID",
-        "da": "Begivenheds-ID",
-        "de": "Ereignis-ID",
-        "es": "ID de evento",
-        "fr": "ID d'événement",
-        "it": "ID evento",
-        "no": "Hendelses-ID",
-        "sv": "Händelse-ID",
-        "pl": "ID zdarzenia",
-        "ru": "ID события",
-        "ko": "이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_name",
-        "nl": "mijn_unieke_gebeurtenisnaam",
-        "da": "mit_unikke_begivenhed_navn",
-        "de": "mein_eindeutiger_ereignisname",
-        "es": "mi_nombre_de_evento_unico",
-        "fr": "mon_nom_unique_d'événement",
-        "it": "mio_nome_evento_unico",
-        "no": "min_unike_hendelsesnavn",
-        "sv": "mitt_unika_händelsenamn",
-        "pl": "moje_unikalne_nazwy_wydarzenia",
-        "ru": "мое_уникальное_название_события",
-        "ko": "나의_고유한_이벤트_이름"
-      }
-    },
-    {
-      "type": "number",
-      "name": "time",
-      "title": {
-        "en": "Time",
-        "nl": "Tijd",
-        "da": "Tid",
-        "de": "Zeit",
-        "es": "Tiempo",
-        "fr": "Temps",
-        "it": "Tempo",
-        "no": "Tid",
-        "sv": "Tid",
-        "pl": "Czas",
-        "ru": "Время",
-        "ko": "시간"
-      },
-      "placeholder": {
-        "en": "10",
-        "nl": "10",
-        "da": "10",
-        "de": "10",
-        "es": "10",
-        "fr": "10",
-        "it": "10",
-        "no": "10",
-        "sv": "10",
-        "pl": "10",
-        "ru": "10",
-        "ko": "10"
-      },
-      "min": 0
-    },
-    {
-      "type": "dropdown",
-      "name": "unit",
-      "title": {
-        "en": "Time unit",
-        "nl": "Tijdseenheid",
-        "da": "Tidsenhed",
-        "de": "Zeiteinheit",
-        "es": "Unidad de tiempo",
-        "fr": "Unité de temps",
-        "it": "Unità di tempo",
-        "no": "Tidsenhet",
-        "sv": "Tidsenhet",
-        "pl": "Jednostka czasu",
-        "ru": "Единица времени",
-        "ko": "시간 단위"
-      },
-      "values": [
-        {
-          "id": "seconds",
-          "title": {
-            "en": "seconds",
-            "nl": "seconden",
-            "da": "sekunder",
-            "de": "Sekunden",
-            "es": "segundos",
-            "fr": "secondes",
-            "it": "secondi",
-            "no": "sekunder",
-            "sv": "sekunder",
-            "pl": "sekundy",
-            "ru": "секунды",
-            "ko": "초"
-          }
-        },
-        {
-          "id": "minutes",
-          "title": {
-            "en": "minutes",
-            "nl": "minuten",
-            "da": "minutter",
-            "de": "Minuten",
-            "es": "minutos",
-            "fr": "minutes",
-            "it": "minuti",
-            "no": "minutter",
-            "sv": "minuter",
-            "pl": "minuty",
-            "ru": "минуты",
-            "ko": "분"
-          }
-        },
-        {
-          "id": "hours",
-          "title": {
-            "en": "hours",
-            "nl": "uren",
-            "da": "timer",
-            "de": "Stunden",
-            "es": "horas",
-            "fr": "heures",
-            "it": "ore",
-            "no": "timer",
-            "sv": "timmar",
-            "pl": "godziny",
-            "ru": "часы",
-            "ko": "시간"
-          }
-        },
-        {
-          "id": "days",
-          "title": {
-            "en": "days",
-            "nl": "dagen",
-            "da": "dage",
-            "de": "Tage",
-            "es": "días",
-            "fr": "jours",
-            "it": "giorni",
-            "no": "dager",
-            "sv": "dagar",
-            "pl": "dni",
-            "ru": "дни",
-            "ko": "일"
-          }
-        }
-      ]
-    },
-    {
-      "type": "dropdown",
-      "name": "default_value",
-      "title": {
-        "en": "Default if event never happened",
-        "nl": "Standaard als gebeurtenis nooit plaatsvond",
-        "da": "Standard, hvis begivenhed aldrig skete",
-        "de": "Standardwert, wenn das Ereignis nie passiert ist",
-        "es": "Predeterminado si el evento nunca sucedió",
-        "fr": "Par défaut si l'événement ne s'est jamais produit",
-        "it": "Predefinito se l'evento non è mai avvenuto",
-        "no": "Standard hvis hendelsen aldri skjedde",
-        "sv": "Standard om händelsen aldrig inträffade",
-        "pl": "Domyślnie, jeśli zdarzenie nigdy się nie wydarzyło",
-        "ru": "По умолчанию, если событие никогда не происходило",
-        "ko": "이벤트가 발생하지 않은 경우 기본값"
-      },
-      "values": [
-        {
-          "id": "true",
-          "title": {
-            "en": "True",
-            "nl": "Waar",
-            "da": "Sandt",
-            "de": "Wahr",
-            "es": "Verdadero",
-            "fr": "Vrai",
-            "it": "Vero",
-            "no": "Sant",
-            "sv": "Sant",
-            "pl": "Prawda",
-            "ru": "Истина",
-            "ko": "참"
-          }
-        },
-        {
-          "id": "false",
-          "title": {
-            "en": "False",
-            "nl": "Onwaar",
-            "da": "Falsk",
-            "de": "Falsch",
-            "es": "Falso",
-            "fr": "Faux",
-            "it": "Falso",
-            "no": "Usant",
-            "sv": "Falskt",
-            "pl": "Fałsz",
-            "ru": "Ложь",
-            "ko": "거짓"
-          }
-        }
-      ]
-    }
-  ]
+	"id": "event_happened_less_than",
+	"title": {
+		"en": "Event happened less than time ago",
+		"nl": "Gebeurtenis vond minder dan tijd geleden plaats",
+		"da": "Begivenhed skete for mindre end tid siden",
+		"de": "Ereignis ist vor weniger als Zeit passiert",
+		"es": "El evento ocurrió hace menos tiempo",
+		"fr": "L'événement s'est produit il y a moins de temps",
+		"it": "L'evento è accaduto meno di tempo fa",
+		"no": "Hendelse skjedde for mindre enn tid siden",
+		"sv": "Händelse inträffade för mindre än tid sedan",
+		"pl": "Zdarzenie miało miejsce mniej niż czas temu",
+		"ru": "Событие произошло менее чем время назад",
+		"ko": "이벤트가 발생한 지 시간이 지나지 않았습니다"
+	},
+	"titleFormatted": {
+		"en": "[[event_id]] happened less than [[time]] [[unit]] ago (default: [[default_value]])",
+		"nl": "[[event_id]] vond minder dan [[time]] [[unit]] geleden plaats (standaard: [[default_value]])",
+		"da": "[[event_id]] skete for mindre end [[time]] [[unit]] siden (standard: [[default_value]])",
+		"de": "[[event_id]] geschah vor weniger als [[time]] [[unit]] (Standard: [[default_value]])",
+		"es": "[[event_id]] ocurrió hace menos de [[time]] [[unit]] (predeterminado: [[default_value]])",
+		"fr": "[[event_id]] s'est produit il y a moins de [[time]] [[unit]] (par défaut : [[default_value]])",
+		"it": "[[event_id]] è accaduto meno di [[time]] [[unit]] fa (predefinito: [[default_value]])",
+		"no": "[[event_id]] skjedde for mindre enn [[time]] [[unit]] siden (standard: [[default_value]])",
+		"sv": "[[event_id]] inträffade för mindre än [[time]] [[unit]] sedan (standard: [[default_value]])",
+		"pl": "[[event_id]] miało miejsce miej niż [[time]] [[unit]] temu (domyślnie: [[default_value]])",
+		"ru": "[[event_id]] произошло менее чем [[time]] [[unit]] назад (по умолчанию: [[default_value]])",
+		"ko": "[[event_id]]가 [[time]] [[unit]] 이내에 발생했습니다 (기본: [[default_value]])"
+	},
+	"hint": {
+		"en": "Check if an event happened within a specific time window. Returns the default value if the event never happened.",
+		"nl": "Controleer of een gebeurtenis binnen een specifieke tijdsperiode plaatsvond. Geeft de standaardwaarde terug als de gebeurtenis nooit plaatsvond.",
+		"da": "Tjek om en begivenhed skete inden for et specifikt tidsvindue. Returnerer standardværdien hvis begivenheden aldrig skete.",
+		"de": "Überprüfen Sie, ob ein Ereignis innerhalb eines bestimmten Zeitraums passiert ist. Gibt den Standardwert zurück, wenn das Ereignis nie stattgefunden hat.",
+		"es": "Compruebe si un evento ocurrió dentro de un tiempo específico. Devuelve el valor predeterminado si el evento nunca ocurrió.",
+		"fr": "Vérifiez si un événement s'est produit dans une fenêtre de temps spécifique. Renvoie la valeur par défaut si l'événement ne s'est jamais produit.",
+		"it": "Controlla se un evento è avvenuto entro un periodo di tempo specifico. Restituisce il valore predefinito se l'evento non è mai avvenuto.",
+		"no": "Sjekk om en hendelse skjedde innenfor et spesifikt tidsvindu. Returnerer standardverdien hvis hendelsen aldri skjedde.",
+		"sv": "Kontrollera om en händelse inträffade inom en viss tidsram. Returnerar standardvärdet om händelsen aldrig inträffade.",
+		"pl": "Sprawdź, czy zdarzenie miało miejsce w określonym przedziale czasowym. Zwraca domyślną wartość, jeśli zdarzenie nigdy nie miało miejsca.",
+		"ru": "Проверьте, произошло ли событие в течение определенного временного окна. Возвращает значение по умолчанию, если событие никогда не происходило.",
+		"ko": "특정 시간 범위 내에서 이벤트가 발생했는지 확인하십시오. 이벤트가 발생하지 않은 경우 기본값을 반환합니다."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID",
+				"da": "Begivenheds-ID",
+				"de": "Ereignis-ID",
+				"es": "ID de evento",
+				"fr": "ID d'événement",
+				"it": "ID evento",
+				"no": "Hendelses-ID",
+				"sv": "Händelse-ID",
+				"pl": "ID zdarzenia",
+				"ru": "ID события",
+				"ko": "이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam",
+				"da": "mit_unikke_begivenhed_navn",
+				"de": "mein_eindeutiger_ereignisname",
+				"es": "mi_nombre_de_evento_unico",
+				"fr": "mon_nom_unique_d'événement",
+				"it": "mio_nome_evento_unico",
+				"no": "min_unike_hendelsesnavn",
+				"sv": "mitt_unika_händelsenamn",
+				"pl": "moje_unikalne_nazwy_wydarzenia",
+				"ru": "мое_уникальное_название_события",
+				"ko": "나의_고유한_이벤트_이름"
+			}
+		},
+		{
+			"type": "number",
+			"name": "time",
+			"title": {
+				"en": "Time",
+				"nl": "Tijd",
+				"da": "Tid",
+				"de": "Zeit",
+				"es": "Tiempo",
+				"fr": "Temps",
+				"it": "Tempo",
+				"no": "Tid",
+				"sv": "Tid",
+				"pl": "Czas",
+				"ru": "Время",
+				"ko": "시간"
+			},
+			"placeholder": {
+				"en": "10",
+				"nl": "10",
+				"da": "10",
+				"de": "10",
+				"es": "10",
+				"fr": "10",
+				"it": "10",
+				"no": "10",
+				"sv": "10",
+				"pl": "10",
+				"ru": "10",
+				"ko": "10"
+			},
+			"min": 0
+		},
+		{
+			"type": "dropdown",
+			"name": "unit",
+			"title": {
+				"en": "Time unit",
+				"nl": "Tijdseenheid",
+				"da": "Tidsenhed",
+				"de": "Zeiteinheit",
+				"es": "Unidad de tiempo",
+				"fr": "Unité de temps",
+				"it": "Unità di tempo",
+				"no": "Tidsenhet",
+				"sv": "Tidsenhet",
+				"pl": "Jednostka czasu",
+				"ru": "Единица времени",
+				"ko": "시간 단위"
+			},
+			"values": [
+				{
+					"id": "seconds",
+					"title": {
+						"en": "seconds",
+						"nl": "seconden",
+						"da": "sekunder",
+						"de": "Sekunden",
+						"es": "segundos",
+						"fr": "secondes",
+						"it": "secondi",
+						"no": "sekunder",
+						"sv": "sekunder",
+						"pl": "sekundy",
+						"ru": "секунды",
+						"ko": "초"
+					}
+				},
+				{
+					"id": "minutes",
+					"title": {
+						"en": "minutes",
+						"nl": "minuten",
+						"da": "minutter",
+						"de": "Minuten",
+						"es": "minutos",
+						"fr": "minutes",
+						"it": "minuti",
+						"no": "minutter",
+						"sv": "minuter",
+						"pl": "minuty",
+						"ru": "минуты",
+						"ko": "분"
+					}
+				},
+				{
+					"id": "hours",
+					"title": {
+						"en": "hours",
+						"nl": "uren",
+						"da": "timer",
+						"de": "Stunden",
+						"es": "horas",
+						"fr": "heures",
+						"it": "ore",
+						"no": "timer",
+						"sv": "timmar",
+						"pl": "godziny",
+						"ru": "часы",
+						"ko": "시간"
+					}
+				},
+				{
+					"id": "days",
+					"title": {
+						"en": "days",
+						"nl": "dagen",
+						"da": "dage",
+						"de": "Tage",
+						"es": "días",
+						"fr": "jours",
+						"it": "giorni",
+						"no": "dager",
+						"sv": "dagar",
+						"pl": "dni",
+						"ru": "дни",
+						"ko": "일"
+					}
+				}
+			]
+		},
+		{
+			"type": "dropdown",
+			"name": "default_value",
+			"title": {
+				"en": "Default if event never happened",
+				"nl": "Standaard als gebeurtenis nooit plaatsvond",
+				"da": "Standard, hvis begivenhed aldrig skete",
+				"de": "Standardwert, wenn das Ereignis nie passiert ist",
+				"es": "Predeterminado si el evento nunca sucedió",
+				"fr": "Par défaut si l'événement ne s'est jamais produit",
+				"it": "Predefinito se l'evento non è mai avvenuto",
+				"no": "Standard hvis hendelsen aldri skjedde",
+				"sv": "Standard om händelsen aldrig inträffade",
+				"pl": "Domyślnie, jeśli zdarzenie nigdy się nie wydarzyło",
+				"ru": "По умолчанию, если событие никогда не происходило",
+				"ko": "이벤트가 발생하지 않은 경우 기본값"
+			},
+			"values": [
+				{
+					"id": "true",
+					"title": {
+						"en": "True",
+						"nl": "Waar",
+						"da": "Sandt",
+						"de": "Wahr",
+						"es": "Verdadero",
+						"fr": "Vrai",
+						"it": "Vero",
+						"no": "Sant",
+						"sv": "Sant",
+						"pl": "Prawda",
+						"ru": "Истина",
+						"ko": "참"
+					}
+				},
+				{
+					"id": "false",
+					"title": {
+						"en": "False",
+						"nl": "Onwaar",
+						"da": "Falsk",
+						"de": "Falsch",
+						"es": "Falso",
+						"fr": "Faux",
+						"it": "Falso",
+						"no": "Usant",
+						"sv": "Falskt",
+						"pl": "Fałsz",
+						"ru": "Ложь",
+						"ko": "거짓"
+					}
+				}
+			]
+		}
+	]
 }

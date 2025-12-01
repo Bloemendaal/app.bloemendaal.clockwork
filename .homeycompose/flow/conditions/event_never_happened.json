@@ -1,79 +1,79 @@
 {
-  "id": "event_never_happened",
-  "title": {
-    "en": "Event has never happened",
-    "nl": "Gebeurtenis heeft nooit plaatsgevonden",
-    "da": "Begivenheden er aldrig sket",
-    "de": "Ereignis hat nie stattgefunden",
-    "es": "El evento nunca ha ocurrido",
-    "fr": "L'événement ne s'est jamais produit",
-    "it": "L'evento non è mai accaduto",
-    "no": "Hendelsen har aldri skjedd",
-    "sv": "Händelsen har aldrig inträffat",
-    "pl": "Wydarzenie nigdy się nie wydarzyło",
-    "ru": "Событие никогда не происходило",
-    "ko": "이벤트가 발생한 적이 없습니다"
-  },
-  "titleFormatted": {
-    "en": "[[event_id]] has never happened",
-    "nl": "[[event_id]] heeft nooit plaatsgevonden",
-    "da": "[[event_id]] er aldrig sket",
-    "de": "[[event_id]] hat nie stattgefunden",
-    "es": "[[event_id]] nunca ha ocurrido",
-    "fr": "[[event_id]] ne s'est jamais produit",
-    "it": "[[event_id]] non è mai accaduto",
-    "no": "[[event_id]] har aldri skjedd",
-    "sv": "[[event_id]] har aldrig inträffat",
-    "pl": "[[event_id]] nigdy się nie wydarzyło",
-    "ru": "[[event_id]] никогда не происходило",
-    "ko": "[[event_id]]가 발생한 적이 없습니다"
-  },
-  "hint": {
-    "en": "Check if an event has never been recorded. Useful for first-time detection.",
-    "nl": "Controleer of een gebeurtenis nooit is opgeslagen. Handig voor eerste keer detectie.",
-    "da": "Tjek, om en begivenhed aldrig er blevet registreret. Nyttigt for første gang detektion.",
-    "de": "Überprüfen Sie, ob ein Ereignis nie aufgezeichnet wurde. Nützlich für die Erstmal-Erkennung.",
-    "es": "Comprueba si un evento nunca se ha registrado. Útil para la detección por primera vez.",
-    "fr": "Vérifiez si un événement n'a jamais été enregistré. Utile pour une détection initiale.",
-    "it": "Verifica se un evento non è mai stato registrato. Utile per il rilevamento la prima volta.",
-    "no": "Sjekk om en hendelse aldri har blitt registrert. Nyttig for første gangs deteksjon.",
-    "sv": "Kontrollera om en händelse aldrig har registrerats. Användbart för första detektion.",
-    "pl": "Sprawdź, czy wydarzenie nigdy nie zostało zarejestrowane. Przydatne przy pierwszym wykrywaniu.",
-    "ru": "Проверьте, было ли событие когда-либо зарегистрировано. Полезно для первого обнаружения.",
-    "ko": "이벤트가 기록된 적이 없는지 확인하세요. 최초 감지 시 유용합니다."
-  },
-  "args": [
-    {
-      "type": "autocomplete",
-      "name": "event_id",
-      "title": {
-        "en": "Event ID",
-        "nl": "Gebeurtenis-ID",
-        "da": "Begivenheds-ID",
-        "de": "Ereignis-ID",
-        "es": "ID del evento",
-        "fr": "ID de l'événement",
-        "it": "ID evento",
-        "no": "Hendelses-ID",
-        "sv": "Händelse-ID",
-        "pl": "ID zdarzenia",
-        "ru": "ID события",
-        "ko": "이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_name",
-        "nl": "mijn_unieke_gebeurtenisnaam",
-        "da": "mit_unikke_begivenhedsnavn",
-        "de": "mein_einzigartiger_ereignisname",
-        "es": "mi_nombre_de_evento_único",
-        "fr": "mon_nom_d'événement_unique",
-        "it": "mio_nome_evento_unico",
-        "no": "mitt_unike_hendelsesnavn",
-        "sv": "mitt_unika_händelsenamn",
-        "pl": "moja_unikalna_nazwa_wydarzenia",
-        "ru": "мое_уникальное_имя_события",
-        "ko": "내_고유의_이벤트_이름"
-      }
-    }
-  ]
+	"id": "event_never_happened",
+	"title": {
+		"en": "Event has never happened",
+		"nl": "Gebeurtenis heeft nooit plaatsgevonden",
+		"da": "Begivenheden er aldrig sket",
+		"de": "Ereignis hat nie stattgefunden",
+		"es": "El evento nunca ha ocurrido",
+		"fr": "L'événement ne s'est jamais produit",
+		"it": "L'evento non è mai accaduto",
+		"no": "Hendelsen har aldri skjedd",
+		"sv": "Händelsen har aldrig inträffat",
+		"pl": "Wydarzenie nigdy się nie wydarzyło",
+		"ru": "Событие никогда не происходило",
+		"ko": "이벤트가 발생한 적이 없습니다"
+	},
+	"titleFormatted": {
+		"en": "[[event_id]] has never happened",
+		"nl": "[[event_id]] heeft nooit plaatsgevonden",
+		"da": "[[event_id]] er aldrig sket",
+		"de": "[[event_id]] hat nie stattgefunden",
+		"es": "[[event_id]] nunca ha ocurrido",
+		"fr": "[[event_id]] ne s'est jamais produit",
+		"it": "[[event_id]] non è mai accaduto",
+		"no": "[[event_id]] har aldri skjedd",
+		"sv": "[[event_id]] har aldrig inträffat",
+		"pl": "[[event_id]] nigdy się nie wydarzyło",
+		"ru": "[[event_id]] никогда не происходило",
+		"ko": "[[event_id]]가 발생한 적이 없습니다"
+	},
+	"hint": {
+		"en": "Check if an event has never been recorded. Useful for first-time detection.",
+		"nl": "Controleer of een gebeurtenis nooit is opgeslagen. Handig voor eerste keer detectie.",
+		"da": "Tjek, om en begivenhed aldrig er blevet registreret. Nyttigt for første gang detektion.",
+		"de": "Überprüfen Sie, ob ein Ereignis nie aufgezeichnet wurde. Nützlich für die Erstmal-Erkennung.",
+		"es": "Comprueba si un evento nunca se ha registrado. Útil para la detección por primera vez.",
+		"fr": "Vérifiez si un événement n'a jamais été enregistré. Utile pour une détection initiale.",
+		"it": "Verifica se un evento non è mai stato registrato. Utile per il rilevamento la prima volta.",
+		"no": "Sjekk om en hendelse aldri har blitt registrert. Nyttig for første gangs deteksjon.",
+		"sv": "Kontrollera om en händelse aldrig har registrerats. Användbart för första detektion.",
+		"pl": "Sprawdź, czy wydarzenie nigdy nie zostało zarejestrowane. Przydatne przy pierwszym wykrywaniu.",
+		"ru": "Проверьте, было ли событие когда-либо зарегистрировано. Полезно для первого обнаружения.",
+		"ko": "이벤트가 기록된 적이 없는지 확인하세요. 최초 감지 시 유용합니다."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID",
+				"da": "Begivenheds-ID",
+				"de": "Ereignis-ID",
+				"es": "ID del evento",
+				"fr": "ID de l'événement",
+				"it": "ID evento",
+				"no": "Hendelses-ID",
+				"sv": "Händelse-ID",
+				"pl": "ID zdarzenia",
+				"ru": "ID события",
+				"ko": "이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam",
+				"da": "mit_unikke_begivenhedsnavn",
+				"de": "mein_einzigartiger_ereignisname",
+				"es": "mi_nombre_de_evento_único",
+				"fr": "mon_nom_d'événement_unique",
+				"it": "mio_nome_evento_unico",
+				"no": "mitt_unike_hendelsesnavn",
+				"sv": "mitt_unika_händelsenamn",
+				"pl": "moja_unikalna_nazwa_wydarzenia",
+				"ru": "мое_уникальное_имя_события",
+				"ko": "내_고유의_이벤트_이름"
+			}
+		}
+	]
 }

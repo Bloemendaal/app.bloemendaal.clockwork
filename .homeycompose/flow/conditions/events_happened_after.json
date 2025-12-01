@@ -1,165 +1,165 @@
 {
-  "id": "events_happened_after",
-  "title": {
-    "en": "Event happened after another event",
-    "nl": "Gebeurtenis vond plaats na andere gebeurtenis",
-    "da": "Begivenhed skete efter en anden begivenhed",
-    "de": "Ereignis trat nach einem anderen Ereignis ein",
-    "es": "Evento ocurrió después de otro evento",
-    "fr": "Événement s'est produit après un autre événement",
-    "it": "Evento accaduto dopo un altro evento",
-    "no": "Hendelse skjedde etter en annen hendelse",
-    "sv": "Händelse inträffade efter en annan händelse",
-    "pl": "Zdarzenie nastąpiło po innym zdarzeniu",
-    "ru": "Событие произошло после другого события",
-    "ko": "사건이 다른 사건 이후에 발생함"
-  },
-  "titleFormatted": {
-    "en": "[[event_id_a]] happened after [[event_id_b]] (default: [[default_value]])",
-    "nl": "[[event_id_a]] vond plaats na [[event_id_b]] (standaard: [[default_value]])",
-    "da": "[[event_id_a]] skete efter [[event_id_b]] (standard: [[default_value]])",
-    "de": "[[event_id_a]] trat nach [[event_id_b]] ein (Standard: [[default_value]])",
-    "es": "[[event_id_a]] ocurrió después de [[event_id_b]] (predeterminado: [[default_value]])",
-    "fr": "[[event_id_a]] s'est produit après [[event_id_b]] (par défaut : [[default_value]])",
-    "it": "[[event_id_a]] è accaduto dopo [[event_id_b]] (predefinito: [[default_value]])",
-    "no": "[[event_id_a]] skjedde etter [[event_id_b]] (standard: [[default_value]])",
-    "sv": "[[event_id_a]] inträffade efter [[event_id_b]] (standard: [[default_value]])",
-    "pl": "[[event_id_a]] nastąpiło po [[event_id_b]] (domyślnie: [[default_value]])",
-    "ru": "[[event_id_a]] произошло после [[event_id_b]] (по умолчанию: [[default_value]])",
-    "ko": "[[event_id_a]]은 [[event_id_b]] 후에 발생했습니다 (기본값: [[default_value]])"
-  },
-  "hint": {
-    "en": "Check if event A happened after event B. Returns the default value if either event never happened.",
-    "nl": "Controleer of gebeurtenis A plaatsvond na gebeurtenis B. Geeft de standaardwaarde terug als een van beide gebeurtenissen nooit plaatsvond.",
-    "da": "Kontroller om begivenhed A skete efter begivenhed B. Returnerer standardværdien, hvis en af begivenhederne aldrig skete.",
-    "de": "Überprüfen Sie, ob Ereignis A nach Ereignis B eingetreten ist. Gibt den Standardwert zurück, wenn eines der Ereignisse nie eingetreten ist.",
-    "es": "Comprueba si el evento A ocurrió después del evento B. Devuelve el valor predeterminado si alguno de los eventos nunca ocurrió.",
-    "fr": "Vérifiez si l'événement A s'est produit après l'événement B. Renvoie la valeur par défaut si l'un des événements ne s'est jamais produit.",
-    "it": "Verifica se l'evento A è avvenuto dopo l'evento B. Restituisce il valore predefinito se uno degli eventi non si è mai verificato.",
-    "no": "Sjekk om hendelse A skjedde etter hendelse B. Returnerer standardverdien hvis en av hendelsene aldri skjedde.",
-    "sv": "Kontrollera om händelse A inträffade efter händelse B. Returnerar standardvärdet om någon av händelserna aldrig inträffade.",
-    "pl": "Sprawdź, czy zdarzenie A nastąpiło po zdarzeniu B. Zwraca wartość domyślną, jeśli którekolwiek ze zdarzeń nigdy nie miało miejsca.",
-    "ru": "Проверьте, произошло ли событие A после события B. Возвращает значение по умолчанию, если какое-либо из событий никогда не происходило.",
-    "ko": "이벤트 A가 이벤트 B 이후에 발생했는지 확인하세요. 어느 이벤트도 발생하지 않았다면 기본값을 반환합니다."
-  },
-  "args": [
-    {
-      "type": "autocomplete",
-      "name": "event_id_a",
-      "title": {
-        "en": "First event ID",
-        "nl": "Eerste gebeurtenis-ID",
-        "da": "Første begivenheds-ID",
-        "de": "Erste Ereignis-ID",
-        "es": "ID del primer evento",
-        "fr": "ID du premier événement",
-        "it": "ID del primo evento",
-        "no": "Første hendelses-ID",
-        "sv": "Första händelse-ID",
-        "pl": "ID pierwszego zdarzenia",
-        "ru": "ID первого события",
-        "ko": "첫 번째 이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_a",
-        "nl": "mijn_unieke_event_a",
-        "da": "min_unikke_event_a",
-        "de": "mein_einzigartig_event_a",
-        "es": "mi_evento_unico_a",
-        "fr": "mon_evenement_unique_a",
-        "it": "mio_evento_unico_a",
-        "no": "mitt_unike_event_a",
-        "sv": "mitt_unika_event_a",
-        "pl": "moje_unikalne_zdarzenie_a",
-        "ru": "мое_уникальное_событие_a",
-        "ko": "내_고유_이벤트_a"
-      }
-    },
-    {
-      "type": "autocomplete",
-      "name": "event_id_b",
-      "title": {
-        "en": "Second event ID",
-        "nl": "Tweede gebeurtenis-ID",
-        "da": "Anden begivenheds-ID",
-        "de": "Zweite Ereignis-ID",
-        "es": "ID del segundo evento",
-        "fr": "ID du deuxième événement",
-        "it": "ID del secondo evento",
-        "no": "Andre hendelses-ID",
-        "sv": "Andra händelse-ID",
-        "pl": "ID drugiego zdarzenia",
-        "ru": "ID второго события",
-        "ko": "두 번째 이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_b",
-        "nl": "mijn_unieke_event_b",
-        "da": "min_unikke_event_b",
-        "de": "mein_einzigartig_event_b",
-        "es": "mi_evento_unico_b",
-        "fr": "mon_evenement_unique_b",
-        "it": "mio_evento_unico_b",
-        "no": "mitt_unike_event_b",
-        "sv": "mitt_unika_event_b",
-        "pl": "moje_unikalne_zdarzenie_b",
-        "ru": "мое_уникальное_событие_b",
-        "ko": "내_고유_이벤트_b"
-      }
-    },
-    {
-      "type": "dropdown",
-      "name": "default_value",
-      "title": {
-        "en": "Default if either event never happened",
-        "nl": "Standaard als een gebeurtenis nooit plaatsvond",
-        "da": "Standard, hvis enten begivenhed aldrig skete",
-        "de": "Standard, wenn eines der Ereignisse nie eingetreten ist",
-        "es": "Predeterminado si alguno de los eventos nunca ocurrió",
-        "fr": "Par défaut si l'un des événements ne s'est jamais produit",
-        "it": "Predefinito se uno degli eventi non è mai accaduto",
-        "no": "Standard hvis en av hendelsene aldri skjedde",
-        "sv": "Standard om någon av händelserna aldrig inträffade",
-        "pl": "Domyślnie, jeśli którekolwiek ze zdarzeń nigdy nie miało miejsca",
-        "ru": "По умолчанию, если какое-либо из событий никогда не происходило",
-        "ko": "어느 이벤트도 발생하지 않았다면 기본값"
-      },
-      "values": [
-        {
-          "id": "true",
-          "title": {
-            "en": "True",
-            "nl": "Waar",
-            "da": "Sandt",
-            "de": "Wahr",
-            "es": "Verdadero",
-            "fr": "Vrai",
-            "it": "Vero",
-            "no": "Sant",
-            "sv": "Sann",
-            "pl": "Prawda",
-            "ru": "Истина",
-            "ko": "참"
-          }
-        },
-        {
-          "id": "false",
-          "title": {
-            "en": "False",
-            "nl": "Onwaar",
-            "da": "Falsk",
-            "de": "Falsch",
-            "es": "Falso",
-            "fr": "Faux",
-            "it": "Falso",
-            "no": "Usant",
-            "sv": "Falsk",
-            "pl": "Fałsz",
-            "ru": "Ложь",
-            "ko": "거짓"
-          }
-        }
-      ]
-    }
-  ]
+	"id": "events_happened_after",
+	"title": {
+		"en": "Event happened after another event",
+		"nl": "Gebeurtenis vond plaats na andere gebeurtenis",
+		"da": "Begivenhed skete efter en anden begivenhed",
+		"de": "Ereignis trat nach einem anderen Ereignis ein",
+		"es": "Evento ocurrió después de otro evento",
+		"fr": "Événement s'est produit après un autre événement",
+		"it": "Evento accaduto dopo un altro evento",
+		"no": "Hendelse skjedde etter en annen hendelse",
+		"sv": "Händelse inträffade efter en annan händelse",
+		"pl": "Zdarzenie nastąpiło po innym zdarzeniu",
+		"ru": "Событие произошло после другого события",
+		"ko": "사건이 다른 사건 이후에 발생함"
+	},
+	"titleFormatted": {
+		"en": "[[event_id_a]] happened after [[event_id_b]] (default: [[default_value]])",
+		"nl": "[[event_id_a]] vond plaats na [[event_id_b]] (standaard: [[default_value]])",
+		"da": "[[event_id_a]] skete efter [[event_id_b]] (standard: [[default_value]])",
+		"de": "[[event_id_a]] trat nach [[event_id_b]] ein (Standard: [[default_value]])",
+		"es": "[[event_id_a]] ocurrió después de [[event_id_b]] (predeterminado: [[default_value]])",
+		"fr": "[[event_id_a]] s'est produit après [[event_id_b]] (par défaut : [[default_value]])",
+		"it": "[[event_id_a]] è accaduto dopo [[event_id_b]] (predefinito: [[default_value]])",
+		"no": "[[event_id_a]] skjedde etter [[event_id_b]] (standard: [[default_value]])",
+		"sv": "[[event_id_a]] inträffade efter [[event_id_b]] (standard: [[default_value]])",
+		"pl": "[[event_id_a]] nastąpiło po [[event_id_b]] (domyślnie: [[default_value]])",
+		"ru": "[[event_id_a]] произошло после [[event_id_b]] (по умолчанию: [[default_value]])",
+		"ko": "[[event_id_a]]은 [[event_id_b]] 후에 발생했습니다 (기본값: [[default_value]])"
+	},
+	"hint": {
+		"en": "Check if event A happened after event B. Returns the default value if either event never happened.",
+		"nl": "Controleer of gebeurtenis A plaatsvond na gebeurtenis B. Geeft de standaardwaarde terug als een van beide gebeurtenissen nooit plaatsvond.",
+		"da": "Kontroller om begivenhed A skete efter begivenhed B. Returnerer standardværdien, hvis en af begivenhederne aldrig skete.",
+		"de": "Überprüfen Sie, ob Ereignis A nach Ereignis B eingetreten ist. Gibt den Standardwert zurück, wenn eines der Ereignisse nie eingetreten ist.",
+		"es": "Comprueba si el evento A ocurrió después del evento B. Devuelve el valor predeterminado si alguno de los eventos nunca ocurrió.",
+		"fr": "Vérifiez si l'événement A s'est produit après l'événement B. Renvoie la valeur par défaut si l'un des événements ne s'est jamais produit.",
+		"it": "Verifica se l'evento A è avvenuto dopo l'evento B. Restituisce il valore predefinito se uno degli eventi non si è mai verificato.",
+		"no": "Sjekk om hendelse A skjedde etter hendelse B. Returnerer standardverdien hvis en av hendelsene aldri skjedde.",
+		"sv": "Kontrollera om händelse A inträffade efter händelse B. Returnerar standardvärdet om någon av händelserna aldrig inträffade.",
+		"pl": "Sprawdź, czy zdarzenie A nastąpiło po zdarzeniu B. Zwraca wartość domyślną, jeśli którekolwiek ze zdarzeń nigdy nie miało miejsca.",
+		"ru": "Проверьте, произошло ли событие A после события B. Возвращает значение по умолчанию, если какое-либо из событий никогда не происходило.",
+		"ko": "이벤트 A가 이벤트 B 이후에 발생했는지 확인하세요. 어느 이벤트도 발생하지 않았다면 기본값을 반환합니다."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id_a",
+			"title": {
+				"en": "First event ID",
+				"nl": "Eerste gebeurtenis-ID",
+				"da": "Første begivenheds-ID",
+				"de": "Erste Ereignis-ID",
+				"es": "ID del primer evento",
+				"fr": "ID du premier événement",
+				"it": "ID del primo evento",
+				"no": "Første hendelses-ID",
+				"sv": "Första händelse-ID",
+				"pl": "ID pierwszego zdarzenia",
+				"ru": "ID первого события",
+				"ko": "첫 번째 이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_a",
+				"nl": "mijn_unieke_event_a",
+				"da": "min_unikke_event_a",
+				"de": "mein_einzigartig_event_a",
+				"es": "mi_evento_unico_a",
+				"fr": "mon_evenement_unique_a",
+				"it": "mio_evento_unico_a",
+				"no": "mitt_unike_event_a",
+				"sv": "mitt_unika_event_a",
+				"pl": "moje_unikalne_zdarzenie_a",
+				"ru": "мое_уникальное_событие_a",
+				"ko": "내_고유_이벤트_a"
+			}
+		},
+		{
+			"type": "autocomplete",
+			"name": "event_id_b",
+			"title": {
+				"en": "Second event ID",
+				"nl": "Tweede gebeurtenis-ID",
+				"da": "Anden begivenheds-ID",
+				"de": "Zweite Ereignis-ID",
+				"es": "ID del segundo evento",
+				"fr": "ID du deuxième événement",
+				"it": "ID del secondo evento",
+				"no": "Andre hendelses-ID",
+				"sv": "Andra händelse-ID",
+				"pl": "ID drugiego zdarzenia",
+				"ru": "ID второго события",
+				"ko": "두 번째 이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_b",
+				"nl": "mijn_unieke_event_b",
+				"da": "min_unikke_event_b",
+				"de": "mein_einzigartig_event_b",
+				"es": "mi_evento_unico_b",
+				"fr": "mon_evenement_unique_b",
+				"it": "mio_evento_unico_b",
+				"no": "mitt_unike_event_b",
+				"sv": "mitt_unika_event_b",
+				"pl": "moje_unikalne_zdarzenie_b",
+				"ru": "мое_уникальное_событие_b",
+				"ko": "내_고유_이벤트_b"
+			}
+		},
+		{
+			"type": "dropdown",
+			"name": "default_value",
+			"title": {
+				"en": "Default if either event never happened",
+				"nl": "Standaard als een gebeurtenis nooit plaatsvond",
+				"da": "Standard, hvis enten begivenhed aldrig skete",
+				"de": "Standard, wenn eines der Ereignisse nie eingetreten ist",
+				"es": "Predeterminado si alguno de los eventos nunca ocurrió",
+				"fr": "Par défaut si l'un des événements ne s'est jamais produit",
+				"it": "Predefinito se uno degli eventi non è mai accaduto",
+				"no": "Standard hvis en av hendelsene aldri skjedde",
+				"sv": "Standard om någon av händelserna aldrig inträffade",
+				"pl": "Domyślnie, jeśli którekolwiek ze zdarzeń nigdy nie miało miejsca",
+				"ru": "По умолчанию, если какое-либо из событий никогда не происходило",
+				"ko": "어느 이벤트도 발생하지 않았다면 기본값"
+			},
+			"values": [
+				{
+					"id": "true",
+					"title": {
+						"en": "True",
+						"nl": "Waar",
+						"da": "Sandt",
+						"de": "Wahr",
+						"es": "Verdadero",
+						"fr": "Vrai",
+						"it": "Vero",
+						"no": "Sant",
+						"sv": "Sann",
+						"pl": "Prawda",
+						"ru": "Истина",
+						"ko": "참"
+					}
+				},
+				{
+					"id": "false",
+					"title": {
+						"en": "False",
+						"nl": "Onwaar",
+						"da": "Falsk",
+						"de": "Falsch",
+						"es": "Falso",
+						"fr": "Faux",
+						"it": "Falso",
+						"no": "Usant",
+						"sv": "Falsk",
+						"pl": "Fałsz",
+						"ru": "Ложь",
+						"ko": "거짓"
+					}
+				}
+			]
+		}
+	]
 }

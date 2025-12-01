@@ -1,256 +1,256 @@
 {
-  "id": "events_happened_equally",
-  "title": {
-    "en": "Events happened at approximately the same time",
-    "nl": "Gebeurtenissen vonden ongeveer gelijktijdig plaats",
-    "da": "Begivenheder skete på omtrent samme tid",
-    "de": "Ereignisse ereigneten sich ungefähr zur gleichen Zeit",
-    "es": "Los eventos ocurrieron aproximadamente al mismo tiempo",
-    "fr": "Les événements se sont produits à peu près au même moment",
-    "it": "Gli eventi sono avvenuti all'incirca nello stesso momento",
-    "no": "Hendelser skjedde omtrent samtidig",
-    "sv": "Händelser inträffade ungefär samtidigt",
-    "pl": "Wydarzenia miały miejsce mniej więcej w tym samym czasie",
-    "ru": "События произошли примерно в одно и то же время",
-    "ko": "이벤트가 거의 같은 시간에 발생했습니다"
-  },
-  "titleFormatted": {
-    "en": "[[event_id_a]] and [[event_id_b]] happened within [[margin]] [[margin_unit]] of each other (default: [[default_value]])",
-    "nl": "[[event_id_a]] en [[event_id_b]] vonden binnen [[margin]] [[margin_unit]] van elkaar plaats (standaard: [[default_value]])",
-    "da": "[[event_id_a]] og [[event_id_b]] skete inden for [[margin]] [[margin_unit]] af hinanden (standard: [[default_value]])",
-    "de": "[[event_id_a]] und [[event_id_b]] fanden innerhalb von [[margin]] [[margin_unit]] voneinander statt (Standard: [[default_value]])",
-    "es": "[[event_id_a]] y [[event_id_b]] ocurrieron dentro de [[margin]] [[margin_unit]] el uno del otro (predeterminado: [[default_value]])",
-    "fr": "[[event_id_a]] et [[event_id_b]] se sont produits à [[margin]] [[margin_unit]] l'un de l'autre (défaut : [[default_value]])",
-    "it": "[[event_id_a]] e [[event_id_b]] sono avvenuti entro [[margin]] [[margin_unit]] l'uno dall'altro (predefinito: [[default_value]])",
-    "no": "[[event_id_a]] og [[event_id_b]] skjedde innen [[margin]] [[margin_unit]] fra hverandre (standard: [[default_value]])",
-    "sv": "[[event_id_a]] och [[event_id_b]] inträffade inom [[margin]] [[margin_unit]] från varandra (standard: [[default_value]])",
-    "pl": "[[event_id_a]] i [[event_id_b]] miały miejsce w ciągu [[margin]] [[margin_unit]] od siebie (domyślnie: [[default_value]])",
-    "ru": "[[event_id_a]] и [[event_id_b]] произошли в пределах [[margin]] [[margin_unit]] друг от друга (по умолчанию: [[default_value]])",
-    "ko": "[[event_id_a]] 및 [[event_id_b]]가 서로 [[margin]] [[margin_unit]] 내에 발생했습니다 (기본값: [[default_value]])"
-  },
-  "hint": {
-    "en": "Check if two events happened at approximately the same time (within the margin). For example, if both events happened within 30 seconds of each other. Returns the default value if either event never happened.",
-    "nl": "Controleer of twee gebeurtenissen ongeveer gelijktijdig plaatsvonden (binnen de marge). Bijvoorbeeld als beide gebeurtenissen binnen 30 seconden van elkaar plaatsvonden. Geeft de standaardwaarde terug als één van de gebeurtenissen nooit plaatsvond.",
-    "da": "Kontroller, om to begivenheder skete på omtrent samme tid (inden for marginen). For eksempel, hvis begge begivenheder skete inden for 30 sekunder fra hinanden. Returnerer standardværdien, hvis en af begivenhederne aldrig fandt sted.",
-    "de": "Überprüfen Sie, ob zwei Ereignisse ungefähr zur gleichen Zeit stattfanden (innerhalb der Marge). Zum Beispiel, wenn beide Ereignisse innerhalb von 30 Sekunden voneinander stattfanden. Gibt den Standardwert zurück, wenn eines der Ereignisse nie stattgefunden hat.",
-    "es": "Compruebe si dos eventos ocurrieron aproximadamente al mismo tiempo (dentro del margen). Por ejemplo, si ambos eventos ocurrieron dentro de los 30 segundos entre sí. Devuelve el valor predeterminado si alguno de los eventos nunca ocurrió.",
-    "fr": "Vérifiez si deux événements se sont produits à peu près au même moment (dans la marge). Par exemple, si les deux événements se sont produits à moins de 30 secondes l'un de l'autre. Renvoie la valeur par défaut si l'un des événements ne s'est jamais produit.",
-    "it": "Controlla se due eventi sono avvenuti approssimativamente nello stesso momento (entro il margine). Ad esempio, se entrambi gli eventi sono avvenuti entro 30 secondi l'uno dall'altro. Restituisce il valore predefinito se uno degli eventi non si è mai verificato.",
-    "no": "Sjekk om to hendelser skjedde omtrent samtidig (innenfor marginen). For eksempel, hvis begge hendelser skjedde innen 30 sekunder fra hverandre. Returnerer standardverdien hvis en av hendelsene aldri skjedde.",
-    "sv": "Kontrollera om två händelser inträffade ungefär samtidigt (inom marginalen). Till exempel, om båda händelserna inträffade inom 30 sekunder från varandra. Returnerar standardvärdet om någon av händelserna aldrig inträffade.",
-    "pl": "Sprawdź, czy dwa wydarzenia miały miejsce mniej więcej w tym samym czasie (w granicach marginesu). Na przykład, jeśli oba wydarzenia miały miejsce w ciągu 30 sekund od siebie. Zwraca wartość domyślną, jeśli któreś z wydarzeń nigdy się nie odbyło.",
-    "ru": "Проверьте, произошли ли два события примерно в одно и то же время (в пределах маржи). Например, если оба события произошли в течение 30 секунд друг от друга. Возвращает значение по умолчанию, если одно из событий никогда не происходило.",
-    "ko": "두 이벤트가 대략 같은 시간에 발생했는지 확인하세요(마진 내). 예를 들어, 두 이벤트가 서로 30초 이내에 발생한 경우. 둘 중 하나의 이벤트가 발생하지 않은 경우 기본값을 반환합니다."
-  },
-  "args": [
-    {
-      "type": "autocomplete",
-      "name": "event_id_a",
-      "title": {
-        "en": "First event ID",
-        "nl": "Eerste gebeurtenis-ID",
-        "da": "Første begivenheds-ID",
-        "de": "Erstes Ereignis-ID",
-        "es": "ID del primer evento",
-        "fr": "ID du premier événement",
-        "it": "ID del primo evento",
-        "no": "Første hendelses-ID",
-        "sv": "Första händelse-ID",
-        "pl": "ID pierwszego wydarzenia",
-        "ru": "ID первого события",
-        "ko": "첫 번째 이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_a",
-        "nl": "mijn_unieke_event_a"
-      }
-    },
-    {
-      "type": "autocomplete",
-      "name": "event_id_b",
-      "title": {
-        "en": "Second event ID",
-        "nl": "Tweede gebeurtenis-ID",
-        "da": "Anden begivenheds-ID",
-        "de": "Zweites Ereignis-ID",
-        "es": "ID del segundo evento",
-        "fr": "ID du second événement",
-        "it": "ID del secondo evento",
-        "no": "Andre hendelses-ID",
-        "sv": "Andra händelse-ID",
-        "pl": "ID drugiego wydarzenia",
-        "ru": "ID второго события",
-        "ko": "두 번째 이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_b",
-        "nl": "mijn_unieke_event_b"
-      }
-    },
-    {
-      "type": "number",
-      "name": "margin",
-      "title": {
-        "en": "Time margin",
-        "nl": "Tijdsmarge",
-        "da": "Tidsmargen",
-        "de": "Zeitmarge",
-        "es": "Margen de tiempo",
-        "fr": "Marge de temps",
-        "it": "Margine di tempo",
-        "no": "Tidsmargin",
-        "sv": "Tidsmarginal",
-        "pl": "Margines czasu",
-        "ru": "Временной интервал",
-        "ko": "시간 마진"
-      },
-      "placeholder": {
-        "en": "30",
-        "nl": "30"
-      },
-      "min": 0
-    },
-    {
-      "type": "dropdown",
-      "name": "margin_unit",
-      "title": {
-        "en": "Margin unit",
-        "nl": "Marge-eenheid",
-        "da": "Margeenhed",
-        "de": "Margeneinheit",
-        "es": "Unidad de margen",
-        "fr": "Unité de marge",
-        "it": "Unità di margine",
-        "no": "Margenhet",
-        "sv": "Marginalenhet",
-        "pl": "Jednostka marginesu",
-        "ru": "Единица измерения интервала",
-        "ko": "마진 단위"
-      },
-      "values": [
-        {
-          "id": "seconds",
-          "title": {
-            "en": "seconds",
-            "nl": "seconden",
-            "da": "sekunder",
-            "de": "Sekunden",
-            "es": "segundos",
-            "fr": "secondes",
-            "it": "secondi",
-            "no": "sekunder",
-            "sv": "sekunder",
-            "pl": "sekundy",
-            "ru": "секунды",
-            "ko": "초"
-          }
-        },
-        {
-          "id": "minutes",
-          "title": {
-            "en": "minutes",
-            "nl": "minuten",
-            "da": "minutter",
-            "de": "Minuten",
-            "es": "minutos",
-            "fr": "minutes",
-            "it": "minuti",
-            "no": "minutter",
-            "sv": "minuter",
-            "pl": "minuty",
-            "ru": "минуты",
-            "ko": "분"
-          }
-        },
-        {
-          "id": "hours",
-          "title": {
-            "en": "hours",
-            "nl": "uren",
-            "da": "timer",
-            "de": "Stunden",
-            "es": "horas",
-            "fr": "heures",
-            "it": "ore",
-            "no": "timer",
-            "sv": "timmar",
-            "pl": "godziny",
-            "ru": "часы",
-            "ko": "시간"
-          }
-        },
-        {
-          "id": "days",
-          "title": {
-            "en": "days",
-            "nl": "dagen",
-            "da": "dage",
-            "de": "Tage",
-            "es": "días",
-            "fr": "jours",
-            "it": "giorni",
-            "no": "dager",
-            "sv": "dagar",
-            "pl": "dni",
-            "ru": "дни",
-            "ko": "일"
-          }
-        }
-      ]
-    },
-    {
-      "type": "dropdown",
-      "name": "default_value",
-      "title": {
-        "en": "Default if either event never happened",
-        "nl": "Standaard als één van de gebeurtenissen nooit plaatsvond",
-        "da": "Standard, hvis en af begivenhederne aldrig skete",
-        "de": "Standard, wenn eines der Ereignisse nie stattgefunden hat",
-        "es": "Predeterminado si alguno de los eventos nunca ocurrió",
-        "fr": "Valeur par défaut si l'un des événements ne s'est jamais produit",
-        "it": "Predefinito se uno degli eventi non si è mai verificato",
-        "no": "Standard hvis en av hendelsene aldri skjedde",
-        "sv": "Standard om någon av händelserna aldrig inträffade",
-        "pl": "Domyślne, jeśli któreś z wydarzeń nigdy się nie odbyło",
-        "ru": "По умолчанию, если одно из событий никогда не происходило",
-        "ko": "이벤트 중 하나라도 발생하지 않은 경우 기본값"
-      },
-      "values": [
-        {
-          "id": "true",
-          "title": {
-            "en": "True",
-            "nl": "Waar",
-            "da": "Sand",
-            "de": "Wahr",
-            "es": "Verdadero",
-            "fr": "Vrai",
-            "it": "Vero",
-            "no": "Sant",
-            "sv": "Sant",
-            "pl": "Prawda",
-            "ru": "Истина",
-            "ko": "참"
-          }
-        },
-        {
-          "id": "false",
-          "title": {
-            "en": "False",
-            "nl": "Onwaar",
-            "da": "Falsk",
-            "de": "Falsch",
-            "es": "Falso",
-            "fr": "Faux",
-            "it": "Falso",
-            "no": "Falsk",
-            "sv": "Falskt",
-            "pl": "Fałsz",
-            "ru": "Ложно",
-            "ko": "거짓"
-          }
-        }
-      ]
-    }
-  ]
+	"id": "events_happened_equally",
+	"title": {
+		"en": "Events happened at approximately the same time",
+		"nl": "Gebeurtenissen vonden ongeveer gelijktijdig plaats",
+		"da": "Begivenheder skete på omtrent samme tid",
+		"de": "Ereignisse ereigneten sich ungefähr zur gleichen Zeit",
+		"es": "Los eventos ocurrieron aproximadamente al mismo tiempo",
+		"fr": "Les événements se sont produits à peu près au même moment",
+		"it": "Gli eventi sono avvenuti all'incirca nello stesso momento",
+		"no": "Hendelser skjedde omtrent samtidig",
+		"sv": "Händelser inträffade ungefär samtidigt",
+		"pl": "Wydarzenia miały miejsce mniej więcej w tym samym czasie",
+		"ru": "События произошли примерно в одно и то же время",
+		"ko": "이벤트가 거의 같은 시간에 발생했습니다"
+	},
+	"titleFormatted": {
+		"en": "[[event_id_a]] and [[event_id_b]] happened within [[margin]] [[margin_unit]] of each other (default: [[default_value]])",
+		"nl": "[[event_id_a]] en [[event_id_b]] vonden binnen [[margin]] [[margin_unit]] van elkaar plaats (standaard: [[default_value]])",
+		"da": "[[event_id_a]] og [[event_id_b]] skete inden for [[margin]] [[margin_unit]] af hinanden (standard: [[default_value]])",
+		"de": "[[event_id_a]] und [[event_id_b]] fanden innerhalb von [[margin]] [[margin_unit]] voneinander statt (Standard: [[default_value]])",
+		"es": "[[event_id_a]] y [[event_id_b]] ocurrieron dentro de [[margin]] [[margin_unit]] el uno del otro (predeterminado: [[default_value]])",
+		"fr": "[[event_id_a]] et [[event_id_b]] se sont produits à [[margin]] [[margin_unit]] l'un de l'autre (défaut : [[default_value]])",
+		"it": "[[event_id_a]] e [[event_id_b]] sono avvenuti entro [[margin]] [[margin_unit]] l'uno dall'altro (predefinito: [[default_value]])",
+		"no": "[[event_id_a]] og [[event_id_b]] skjedde innen [[margin]] [[margin_unit]] fra hverandre (standard: [[default_value]])",
+		"sv": "[[event_id_a]] och [[event_id_b]] inträffade inom [[margin]] [[margin_unit]] från varandra (standard: [[default_value]])",
+		"pl": "[[event_id_a]] i [[event_id_b]] miały miejsce w ciągu [[margin]] [[margin_unit]] od siebie (domyślnie: [[default_value]])",
+		"ru": "[[event_id_a]] и [[event_id_b]] произошли в пределах [[margin]] [[margin_unit]] друг от друга (по умолчанию: [[default_value]])",
+		"ko": "[[event_id_a]] 및 [[event_id_b]]가 서로 [[margin]] [[margin_unit]] 내에 발생했습니다 (기본값: [[default_value]])"
+	},
+	"hint": {
+		"en": "Check if two events happened at approximately the same time (within the margin). For example, if both events happened within 30 seconds of each other. Returns the default value if either event never happened.",
+		"nl": "Controleer of twee gebeurtenissen ongeveer gelijktijdig plaatsvonden (binnen de marge). Bijvoorbeeld als beide gebeurtenissen binnen 30 seconden van elkaar plaatsvonden. Geeft de standaardwaarde terug als één van de gebeurtenissen nooit plaatsvond.",
+		"da": "Kontroller, om to begivenheder skete på omtrent samme tid (inden for marginen). For eksempel, hvis begge begivenheder skete inden for 30 sekunder fra hinanden. Returnerer standardværdien, hvis en af begivenhederne aldrig fandt sted.",
+		"de": "Überprüfen Sie, ob zwei Ereignisse ungefähr zur gleichen Zeit stattfanden (innerhalb der Marge). Zum Beispiel, wenn beide Ereignisse innerhalb von 30 Sekunden voneinander stattfanden. Gibt den Standardwert zurück, wenn eines der Ereignisse nie stattgefunden hat.",
+		"es": "Compruebe si dos eventos ocurrieron aproximadamente al mismo tiempo (dentro del margen). Por ejemplo, si ambos eventos ocurrieron dentro de los 30 segundos entre sí. Devuelve el valor predeterminado si alguno de los eventos nunca ocurrió.",
+		"fr": "Vérifiez si deux événements se sont produits à peu près au même moment (dans la marge). Par exemple, si les deux événements se sont produits à moins de 30 secondes l'un de l'autre. Renvoie la valeur par défaut si l'un des événements ne s'est jamais produit.",
+		"it": "Controlla se due eventi sono avvenuti approssimativamente nello stesso momento (entro il margine). Ad esempio, se entrambi gli eventi sono avvenuti entro 30 secondi l'uno dall'altro. Restituisce il valore predefinito se uno degli eventi non si è mai verificato.",
+		"no": "Sjekk om to hendelser skjedde omtrent samtidig (innenfor marginen). For eksempel, hvis begge hendelser skjedde innen 30 sekunder fra hverandre. Returnerer standardverdien hvis en av hendelsene aldri skjedde.",
+		"sv": "Kontrollera om två händelser inträffade ungefär samtidigt (inom marginalen). Till exempel, om båda händelserna inträffade inom 30 sekunder från varandra. Returnerar standardvärdet om någon av händelserna aldrig inträffade.",
+		"pl": "Sprawdź, czy dwa wydarzenia miały miejsce mniej więcej w tym samym czasie (w granicach marginesu). Na przykład, jeśli oba wydarzenia miały miejsce w ciągu 30 sekund od siebie. Zwraca wartość domyślną, jeśli któreś z wydarzeń nigdy się nie odbyło.",
+		"ru": "Проверьте, произошли ли два события примерно в одно и то же время (в пределах маржи). Например, если оба события произошли в течение 30 секунд друг от друга. Возвращает значение по умолчанию, если одно из событий никогда не происходило.",
+		"ko": "두 이벤트가 대략 같은 시간에 발생했는지 확인하세요(마진 내). 예를 들어, 두 이벤트가 서로 30초 이내에 발생한 경우. 둘 중 하나의 이벤트가 발생하지 않은 경우 기본값을 반환합니다."
+	},
+	"args": [
+		{
+			"type": "autocomplete",
+			"name": "event_id_a",
+			"title": {
+				"en": "First event ID",
+				"nl": "Eerste gebeurtenis-ID",
+				"da": "Første begivenheds-ID",
+				"de": "Erstes Ereignis-ID",
+				"es": "ID del primer evento",
+				"fr": "ID du premier événement",
+				"it": "ID del primo evento",
+				"no": "Første hendelses-ID",
+				"sv": "Första händelse-ID",
+				"pl": "ID pierwszego wydarzenia",
+				"ru": "ID первого события",
+				"ko": "첫 번째 이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_a",
+				"nl": "mijn_unieke_event_a"
+			}
+		},
+		{
+			"type": "autocomplete",
+			"name": "event_id_b",
+			"title": {
+				"en": "Second event ID",
+				"nl": "Tweede gebeurtenis-ID",
+				"da": "Anden begivenheds-ID",
+				"de": "Zweites Ereignis-ID",
+				"es": "ID del segundo evento",
+				"fr": "ID du second événement",
+				"it": "ID del secondo evento",
+				"no": "Andre hendelses-ID",
+				"sv": "Andra händelse-ID",
+				"pl": "ID drugiego wydarzenia",
+				"ru": "ID второго события",
+				"ko": "두 번째 이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_b",
+				"nl": "mijn_unieke_event_b"
+			}
+		},
+		{
+			"type": "number",
+			"name": "margin",
+			"title": {
+				"en": "Time margin",
+				"nl": "Tijdsmarge",
+				"da": "Tidsmargen",
+				"de": "Zeitmarge",
+				"es": "Margen de tiempo",
+				"fr": "Marge de temps",
+				"it": "Margine di tempo",
+				"no": "Tidsmargin",
+				"sv": "Tidsmarginal",
+				"pl": "Margines czasu",
+				"ru": "Временной интервал",
+				"ko": "시간 마진"
+			},
+			"placeholder": {
+				"en": "30",
+				"nl": "30"
+			},
+			"min": 0
+		},
+		{
+			"type": "dropdown",
+			"name": "margin_unit",
+			"title": {
+				"en": "Margin unit",
+				"nl": "Marge-eenheid",
+				"da": "Margeenhed",
+				"de": "Margeneinheit",
+				"es": "Unidad de margen",
+				"fr": "Unité de marge",
+				"it": "Unità di margine",
+				"no": "Margenhet",
+				"sv": "Marginalenhet",
+				"pl": "Jednostka marginesu",
+				"ru": "Единица измерения интервала",
+				"ko": "마진 단위"
+			},
+			"values": [
+				{
+					"id": "seconds",
+					"title": {
+						"en": "seconds",
+						"nl": "seconden",
+						"da": "sekunder",
+						"de": "Sekunden",
+						"es": "segundos",
+						"fr": "secondes",
+						"it": "secondi",
+						"no": "sekunder",
+						"sv": "sekunder",
+						"pl": "sekundy",
+						"ru": "секунды",
+						"ko": "초"
+					}
+				},
+				{
+					"id": "minutes",
+					"title": {
+						"en": "minutes",
+						"nl": "minuten",
+						"da": "minutter",
+						"de": "Minuten",
+						"es": "minutos",
+						"fr": "minutes",
+						"it": "minuti",
+						"no": "minutter",
+						"sv": "minuter",
+						"pl": "minuty",
+						"ru": "минуты",
+						"ko": "분"
+					}
+				},
+				{
+					"id": "hours",
+					"title": {
+						"en": "hours",
+						"nl": "uren",
+						"da": "timer",
+						"de": "Stunden",
+						"es": "horas",
+						"fr": "heures",
+						"it": "ore",
+						"no": "timer",
+						"sv": "timmar",
+						"pl": "godziny",
+						"ru": "часы",
+						"ko": "시간"
+					}
+				},
+				{
+					"id": "days",
+					"title": {
+						"en": "days",
+						"nl": "dagen",
+						"da": "dage",
+						"de": "Tage",
+						"es": "días",
+						"fr": "jours",
+						"it": "giorni",
+						"no": "dager",
+						"sv": "dagar",
+						"pl": "dni",
+						"ru": "дни",
+						"ko": "일"
+					}
+				}
+			]
+		},
+		{
+			"type": "dropdown",
+			"name": "default_value",
+			"title": {
+				"en": "Default if either event never happened",
+				"nl": "Standaard als één van de gebeurtenissen nooit plaatsvond",
+				"da": "Standard, hvis en af begivenhederne aldrig skete",
+				"de": "Standard, wenn eines der Ereignisse nie stattgefunden hat",
+				"es": "Predeterminado si alguno de los eventos nunca ocurrió",
+				"fr": "Valeur par défaut si l'un des événements ne s'est jamais produit",
+				"it": "Predefinito se uno degli eventi non si è mai verificato",
+				"no": "Standard hvis en av hendelsene aldri skjedde",
+				"sv": "Standard om någon av händelserna aldrig inträffade",
+				"pl": "Domyślne, jeśli któreś z wydarzeń nigdy się nie odbyło",
+				"ru": "По умолчанию, если одно из событий никогда не происходило",
+				"ko": "이벤트 중 하나라도 발생하지 않은 경우 기본값"
+			},
+			"values": [
+				{
+					"id": "true",
+					"title": {
+						"en": "True",
+						"nl": "Waar",
+						"da": "Sand",
+						"de": "Wahr",
+						"es": "Verdadero",
+						"fr": "Vrai",
+						"it": "Vero",
+						"no": "Sant",
+						"sv": "Sant",
+						"pl": "Prawda",
+						"ru": "Истина",
+						"ko": "참"
+					}
+				},
+				{
+					"id": "false",
+					"title": {
+						"en": "False",
+						"nl": "Onwaar",
+						"da": "Falsk",
+						"de": "Falsch",
+						"es": "Falso",
+						"fr": "Faux",
+						"it": "Falso",
+						"no": "Falsk",
+						"sv": "Falskt",
+						"pl": "Fałsz",
+						"ru": "Ложно",
+						"ko": "거짓"
+					}
+				}
+			]
+		}
+	]
 }

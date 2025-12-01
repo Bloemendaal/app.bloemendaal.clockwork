@@ -1,79 +1,79 @@
 {
-  "id": "store_event",
-  "title": {
-    "en": "Store that event happened",
-    "nl": "Sla op dat gebeurtenis plaatsvond",
-    "da": "Gem, at begivenheden skete",
-    "de": "Speichere, dass das Ereignis stattfand",
-    "es": "Guardar que el evento ocurrió",
-    "fr": "Enregistrer que l'événement a eu lieu",
-    "it": "Memorizza che l'evento è accaduto",
-    "no": "Lagre at hendelsen skjedde",
-    "sv": "Spara att händelsen inträffade",
-    "pl": "Zapisz, że wydarzenie miało miejsce",
-    "ru": "Сохранить, что событие произошло",
-    "ko": "이벤트가 발생한 것을 저장하세요"
-  },
-  "titleFormatted": {
-    "en": "Store that [[event_id]] happened",
-    "nl": "Sla op dat [[event_id]] plaatsvond",
-    "da": "Gem, at [[event_id]] skete",
-    "de": "Speichere, dass [[event_id]] stattfand",
-    "es": "Guardar que [[event_id]] ocurrió",
-    "fr": "Enregistrer que [[event_id]] a eu lieu",
-    "it": "Memorizza che [[event_id]] è accaduto",
-    "no": "Lagre at [[event_id]] skjedde",
-    "sv": "Spara att [[event_id]] inträffade",
-    "pl": "Zapisz, że [[event_id]] miało miejsce",
-    "ru": "Сохранить, что [[event_id]] произошло",
-    "ko": "[[event_id]]가 발생한 것을 저장하세요"
-  },
-  "hint": {
-    "en": "Store the current timestamp for an event ID. You can use this later in a condition card to check how long ago this event occurred.",
-    "nl": "Sla het huidige tijdstip op voor een gebeurtenis-ID. Je kunt dit later gebruiken in een voorwaarde-kaart om te controleren hoe lang geleden deze gebeurtenis plaatsvond.",
-    "da": "Opbevar den aktuelle tidsstempel for et begivenheds-ID. Du kan bruge dette senere i et betingelseskort til at kontrollere, hvor lang tid siden denne begivenhed fandt sted.",
-    "de": "Speichern Sie den aktuellen Zeitstempel für eine Ereignis-ID. Sie können dies später in einer Bedingungskarte verwenden, um zu überprüfen, wie lange dieses Ereignis zurückliegt.",
-    "es": "Guarde la marca de tiempo actual para un ID de evento. Puede usar esto más tarde en una tarjeta de condición para verificar cuánto tiempo hace que ocurrió este evento.",
-    "fr": "Enregistrez l'horodatage actuel pour un ID d'événement. Vous pouvez utiliser cela plus tard dans une carte-condition pour vérifier combien de temps s'est écoulé depuis cet événement.",
-    "it": "Memorizza il timestamp corrente per un ID evento. Puoi usarlo più tardi in una scheda condizione per verificare quanto tempo fa questo evento è accaduto.",
-    "no": "Lagre den nåværende tidsstempel for en hendelses-ID. Du kan bruke dette senere i et betingelseskort for å sjekke hvor lenge siden denne hendelsen skjedde.",
-    "sv": "Spara den aktuella tidsstämpeln för ett händelse-ID. Du kan använda detta senare i ett villkorskort för att kontrollera hur länge sedan denna händelse inträffade.",
-    "pl": "Zapisz aktualny znacznik czasu dla identyfikatora zdarzenia. Możesz tego użyć później w karcie warunku, aby sprawdzić, jak dawno to zdarzenie miało miejsce.",
-    "ru": "Сохранить текущую временную метку для ID события. Вы можете использовать это позже в карте условий, чтобы проверить, как давно произошло это событие.",
-    "ko": "이벤트 ID에 대한 현재 타임스탬프를 저장하세요. 나중에 조건 카드에서 사용하여 이 이벤트가 발생한 시기를 확인할 수 있습니다."
-  },
-  "args": [
-    {
-      "type": "text",
-      "name": "event_id",
-      "title": {
-        "en": "Event ID",
-        "nl": "Gebeurtenis-ID",
-        "da": "Begivenheds-ID",
-        "de": "Ereignis-ID",
-        "es": "ID de evento",
-        "fr": "ID de l'événement",
-        "it": "ID evento",
-        "no": "Hendelses-ID",
-        "sv": "Händelse-ID",
-        "pl": "ID wydarzenia",
-        "ru": "ID события",
-        "ko": "이벤트 ID"
-      },
-      "placeholder": {
-        "en": "my_unique_event_name",
-        "nl": "mijn_unieke_gebeurtenisnaam",
-        "da": "mit_unikke_begivenhedsnavn",
-        "de": "mein_einzigartiger_ereignisname",
-        "es": "mi_nombre_de_evento_único",
-        "fr": "mon_nom_d'événement_unique",
-        "it": "mio_nome_unico_evento",
-        "no": "mitt_unike_hendelsesnavn",
-        "sv": "mitt_unika_händelsenamn",
-        "pl": "moja_unikalna_nazwa_wydarzenia",
-        "ru": "мое_уникальное_название_события",
-        "ko": "나만의_고유한_이벤트_이름"
-      }
-    }
-  ]
+	"id": "store_event",
+	"title": {
+		"en": "Store that event happened",
+		"nl": "Sla op dat gebeurtenis plaatsvond",
+		"da": "Gem, at begivenheden skete",
+		"de": "Speichere, dass das Ereignis stattfand",
+		"es": "Guardar que el evento ocurrió",
+		"fr": "Enregistrer que l'événement a eu lieu",
+		"it": "Memorizza che l'evento è accaduto",
+		"no": "Lagre at hendelsen skjedde",
+		"sv": "Spara att händelsen inträffade",
+		"pl": "Zapisz, że wydarzenie miało miejsce",
+		"ru": "Сохранить, что событие произошло",
+		"ko": "이벤트가 발생한 것을 저장하세요"
+	},
+	"titleFormatted": {
+		"en": "Store that [[event_id]] happened",
+		"nl": "Sla op dat [[event_id]] plaatsvond",
+		"da": "Gem, at [[event_id]] skete",
+		"de": "Speichere, dass [[event_id]] stattfand",
+		"es": "Guardar que [[event_id]] ocurrió",
+		"fr": "Enregistrer que [[event_id]] a eu lieu",
+		"it": "Memorizza che [[event_id]] è accaduto",
+		"no": "Lagre at [[event_id]] skjedde",
+		"sv": "Spara att [[event_id]] inträffade",
+		"pl": "Zapisz, że [[event_id]] miało miejsce",
+		"ru": "Сохранить, что [[event_id]] произошло",
+		"ko": "[[event_id]]가 발생한 것을 저장하세요"
+	},
+	"hint": {
+		"en": "Store the current timestamp for an event ID. You can use this later in a condition card to check how long ago this event occurred.",
+		"nl": "Sla het huidige tijdstip op voor een gebeurtenis-ID. Je kunt dit later gebruiken in een voorwaarde-kaart om te controleren hoe lang geleden deze gebeurtenis plaatsvond.",
+		"da": "Opbevar den aktuelle tidsstempel for et begivenheds-ID. Du kan bruge dette senere i et betingelseskort til at kontrollere, hvor lang tid siden denne begivenhed fandt sted.",
+		"de": "Speichern Sie den aktuellen Zeitstempel für eine Ereignis-ID. Sie können dies später in einer Bedingungskarte verwenden, um zu überprüfen, wie lange dieses Ereignis zurückliegt.",
+		"es": "Guarde la marca de tiempo actual para un ID de evento. Puede usar esto más tarde en una tarjeta de condición para verificar cuánto tiempo hace que ocurrió este evento.",
+		"fr": "Enregistrez l'horodatage actuel pour un ID d'événement. Vous pouvez utiliser cela plus tard dans une carte-condition pour vérifier combien de temps s'est écoulé depuis cet événement.",
+		"it": "Memorizza il timestamp corrente per un ID evento. Puoi usarlo più tardi in una scheda condizione per verificare quanto tempo fa questo evento è accaduto.",
+		"no": "Lagre den nåværende tidsstempel for en hendelses-ID. Du kan bruke dette senere i et betingelseskort for å sjekke hvor lenge siden denne hendelsen skjedde.",
+		"sv": "Spara den aktuella tidsstämpeln för ett händelse-ID. Du kan använda detta senare i ett villkorskort för att kontrollera hur länge sedan denna händelse inträffade.",
+		"pl": "Zapisz aktualny znacznik czasu dla identyfikatora zdarzenia. Możesz tego użyć później w karcie warunku, aby sprawdzić, jak dawno to zdarzenie miało miejsce.",
+		"ru": "Сохранить текущую временную метку для ID события. Вы можете использовать это позже в карте условий, чтобы проверить, как давно произошло это событие.",
+		"ko": "이벤트 ID에 대한 현재 타임스탬프를 저장하세요. 나중에 조건 카드에서 사용하여 이 이벤트가 발생한 시기를 확인할 수 있습니다."
+	},
+	"args": [
+		{
+			"type": "text",
+			"name": "event_id",
+			"title": {
+				"en": "Event ID",
+				"nl": "Gebeurtenis-ID",
+				"da": "Begivenheds-ID",
+				"de": "Ereignis-ID",
+				"es": "ID de evento",
+				"fr": "ID de l'événement",
+				"it": "ID evento",
+				"no": "Hendelses-ID",
+				"sv": "Händelse-ID",
+				"pl": "ID wydarzenia",
+				"ru": "ID события",
+				"ko": "이벤트 ID"
+			},
+			"placeholder": {
+				"en": "my_unique_event_name",
+				"nl": "mijn_unieke_gebeurtenisnaam",
+				"da": "mit_unikke_begivenhedsnavn",
+				"de": "mein_einzigartiger_ereignisname",
+				"es": "mi_nombre_de_evento_único",
+				"fr": "mon_nom_d'événement_unique",
+				"it": "mio_nome_unico_evento",
+				"no": "mitt_unike_hendelsesnavn",
+				"sv": "mitt_unika_händelsenamn",
+				"pl": "moja_unikalna_nazwa_wydarzenia",
+				"ru": "мое_уникальное_название_события",
+				"ko": "나만의_고유한_이벤트_이름"
+			}
+		}
+	]
 }
