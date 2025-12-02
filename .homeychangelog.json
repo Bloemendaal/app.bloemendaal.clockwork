@@ -4,5 +4,8 @@
 	},
 	"1.0.1": {
 		"en": "Generate translations"
+	},
+	"1.0.2": {
+		"en": "Improve title and icon"
 	}
 }
